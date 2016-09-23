@@ -1,0 +1,673 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<link rel="shortcut icon" href="http://users.rowan.edu/%7Epolikar/WAVELETS/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart4_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart4_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>THE WAVELET TUTORIAL</title>
+</head><body style="tab-interval:.5in" background="Part4_files/image001.gif" bgcolor="white" lang="EN-US" link="blue" vlink="purple"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PostalCode">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="State">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceType">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceName">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	color:white;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<meta name="Template" content="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+
+
+
+<!--[if gte mso 9]><xml>
+ <v:background id="_x0000_s1025" o:bwmode="white" o:targetscreensize="800,600">
+  <v:fill src="WTpart4_files/image001.gif" o:title="bg_darkblue2" type="frame"/>
+ </v:background></xml><![endif]-->
+
+<div class="Section1">
+
+<p style="text-align:center" align="center"><b><span style="font-size:24.0pt;
+font-variant:small-caps">The Wavelet Tutorial<o:p></o:p></span></b></p>
+
+<p style="text-align:center" align="center"><b><span style="font-size:24.0pt;
+font-variant:small-caps">Part IV</span></b><b><span style="font-size:24.0pt"><o:p></o:p></span></b></p>
+
+<p style="text-align:center" align="center"><span class="GramE"><b><span style="font-size:24.0pt">by</span></b></span><b><span style="font-size:24.0pt"><o:p></o:p></span></b></p>
+
+<p style="text-align:center" align="center"><b><span style="font-size:24.0pt"><a href="http://users.rowan.edu/%7Epolikar">ROBI POLIKAR<o:p></o:p></a></span></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:20.0pt">MULTIRESOLUTION ANALYSIS: THE DISCRETE
+WAVELET TRANSFORM<o:p></o:p></span></b></p>
+
+<p style="text-align:center" align="center"><b><span style="font-size:20.0pt;
+mso-bidi-font-size:24.0pt"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1028" type="#_x0000_t75" style='width:393pt;
+ height:408pt;mso-position-horizontal-relative:char;
+ mso-position-vertical-relative:line' fillcolor="#0c9">
+ <v:imagedata src="WTpart4_files/image002.png" o:title="" croptop="4083f"
+  cropbottom="4977f" cropright="19333f"/>
+ <w:wrap type="none"/>
+ <w:anchorlock/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part4_files/image003.jpg" v:shapes="_x0000_s1028" height="544" width="524"><!--[endif]--><o:p></o:p></span></b></p>
+
+<p style="text-align:center" align="center"><b><span style="font-size:20.0pt;
+mso-bidi-font-size:24.0pt"><o:p>&nbsp;</o:p></span></b></p>
+
+<p><b>Why is the Discrete Wavelet Transform Needed? <o:p></o:p></b></p>
+
+<p>Although the discretized continuous wavelet transform enables the
+computation of the continuous wavelet transform by computers, it is not a true
+discrete transform. As a matter of fact, the wavelet series is simply a sampled
+version of the CWT, and the information it provides is highly redundant as far
+as the reconstruction of the signal is concerned. This redundancy, on the other
+hand, requires a significant amount of computation time and resources. The
+discrete wavelet transform (DWT), on the other hand, provides sufficient
+information both for analysis and synthesis of the original signal, with a
+significant reduction in the computation time.</p>
+
+<p>The DWT is considerably easier to implement when compared to the CWT. The
+basic concepts of the DWT will be introduced in this section along with its
+properties and the algorithms used to compute it. As in the previous chapters,
+examples are provided to aid in the interpretation of the DWT.</p>
+
+<p>&nbsp;</p>
+
+<p><b>THE DISCRETE WAVELET TRANSFORM (DWT) <o:p></o:p></b></p>
+
+<p>&nbsp;</p>
+
+<p>The foundations of the DWT go back to 1976 when <span class="SpellE">Croiser</span>,
+Esteban, and <span class="SpellE">Galand</span> devised a technique to decompose
+discrete time signals. <span class="SpellE">Crochiere</span>, Weber, and Flanagan
+did a similar work on coding of speech signals in the same year. They named
+their analysis scheme as <span class="SpellE"><b>subband</b></span><b> coding</b>.
+In 1983, Burt defined a technique very similar to <span class="SpellE">subband</span>
+coding and named it <b>pyramidal coding</b> which is also known as
+multiresolution analysis. Later in 1989, <span class="SpellE">Vetterli</span> and
+Le Gall made some improvements to the <span class="SpellE">subband</span> coding
+scheme, removing the existing redundancy in the pyramidal coding scheme. <span class="SpellE">Subband</span> coding is explained below. A detailed coverage of
+the discrete wavelet transform and theory of multiresolution analysis can be
+found in a number of articles and books that are available on this topic, and
+it is beyond the scope of this tutorial. </p>
+
+<p>&nbsp;</p>
+
+<p><b>The <span class="SpellE">Subband</span> Coding and <span class="GramE">The</span>
+Multiresolution Analysis <o:p></o:p></b></p>
+
+<p>&nbsp;</p>
+
+<p>The main idea is the same as it is in the CWT. A time-scale representation
+of a digital signal is obtained using digital filtering techniques. Recall that
+the CWT is a correlation between a wavelet at different scales and the signal
+with the scale (or the frequency) being used as a measure of similarity. The
+continuous wavelet transform was computed by changing the scale of the analysis
+window, shifting the window in time, multiplying by the signal, and integrating
+over all times. In the discrete case, filters of different cutoff frequencies
+are used to analyze the signal at different scales. The signal is passed
+through a series of high pass filters to analyze the high frequencies, and it
+is passed through a series of low pass filters to analyze the low frequencies.</p>
+
+<p>The resolution of the signal, which is a measure of the amount of detail
+information in the signal, is changed by the filtering operations, and the
+scale is changed by upsampling and downsampling (<span class="SpellE">subsampling</span>)
+operations. <span class="SpellE">Subsampling</span> a signal corresponds to
+reducing the sampling rate, or removing some of the samples of the signal. For
+example, <span class="SpellE">subsampling</span> by two refers to dropping every
+other sample of the signal. <span class="SpellE">Subsampling</span> by a factor <i>n</i>
+reduces the number of samples in the signal <i>n</i> times.</p>
+
+<p>Upsampling a signal corresponds to increasing the sampling rate of a signal
+by adding new samples to the signal. For example, upsampling by two refers to
+adding a new sample, usually a zero or an <span class="GramE">interpolated</span>
+value, between every two samples of the signal. Upsampling a signal by a factor
+of <i>n</i> increases the number of samples in the signal by a factor of <i>n</i>.</p>
+
+<p>Although it is not the only possible choice, DWT coefficients are usually
+sampled from the CWT on a dyadic grid, i.e., s<sub>0</sub> = 2 and <span style="font-family:Symbol">t</span> <sub>0</sub> = 1, yielding s=2<sup>j</sup>
+and <span style="font-family:Symbol">t</span> =k*2<sup>j</sup>, as described in
+Part 3. Since the signal is a discrete time function, the terms function and
+sequence will be used interchangeably in the following discussion. This
+sequence will be denoted by x[n], where n is an integer.</p>
+
+<p>The procedure starts with passing this signal (sequence) through a half band
+digital lowpass filter with impulse response h[n]. Filtering a signal corresponds
+to the mathematical operation of convolution of the signal with the impulse
+response of the filter. The convolution operation in discrete time is defined
+as follows:</p>
+
+<p><img id="_x0000_i1026" src="Part4_files/Image10.gif" height="56" border="0" width="245"></p>
+
+<p>A half band lowpass filter removes all frequencies that are above half of
+the highest frequency in the signal. For example, if a signal has a maximum of
+1000 Hz component, then half band lowpass filtering removes all the frequencies
+above 500 Hz. </p>
+
+<p>The unit of frequency is of particular importance at this time. In discrete
+signals, frequency is expressed in terms of radians. Accordingly, the sampling
+frequency of the signal is equal to 2<span style="font-family:Symbol">p</span>
+radians in terms of radial frequency. Therefore, the highest frequency
+component that exists in a signal will be <span style="font-family:Symbol">p</span>
+radians, if the signal is sampled at <span class="SpellE">Nyquist�s</span> rate
+(which is twice the maximum frequency that exists in the signal); that is, the <span class="SpellE">Nyquist�s</span> rate corresponds to <span style="font-family:
+Symbol">p</span> <span class="SpellE">rad</span>/s in the discrete frequency
+domain. Therefore using Hz is not appropriate for discrete signals. However, Hz
+is used whenever it is needed to clarify a discussion, since it is very common
+to think of frequency in terms of Hz. It should always be remembered that the
+unit of frequency for discrete time signals is radians.</p>
+
+<p>After passing the signal through a half band lowpass filter, half of the
+samples can be eliminated according to the <span class="SpellE">Nyquist�s</span>
+rule, since the signal now has a highest frequency of <span style="font-family:
+Symbol">p</span>/2 radians instead of <span style="font-family:Symbol">p</span>
+radians. Simply discarding every other sample will <span class="SpellE"><b>subsample</b></span>
+the signal by two, and the signal will then have half the number of points. The
+scale of the signal is now doubled. Note that the lowpass filtering removes the
+high frequency information, but leaves the scale unchanged. Only the <span class="SpellE">subsampling</span> process changes the scale. Resolution, on the
+other hand, is related to the amount of information in the signal, and
+therefore, it is affected by the filtering operations. Half band lowpass
+filtering removes half of the frequencies, which can be interpreted as losing
+half of the information. Therefore, the resolution is halved after the
+filtering operation. Note, however, the <span class="SpellE">subsampling</span>
+operation after filtering does not affect the resolution, since removing half
+of the spectral components from the signal makes half the number of samples
+redundant anyway. Half the samples can be discarded without any loss of information.
+In summary, the lowpass filtering halves the resolution, but leaves the scale
+unchanged. The signal is then <span class="SpellE">subsampled</span> by 2 since
+half of the <span class="GramE">number of samples are</span> redundant. This
+doubles the scale. </p>
+
+<p>This procedure can mathematically be expressed as</p>
+
+<p><img id="_x0000_i1027" src="Part4_files/Image11.gif" height="56" border="0" width="209"></p>
+
+<p>Having said that, we now look how the DWT is actually computed: The DWT
+analyzes the signal at different frequency bands with different resolutions by
+decomposing the signal into a coarse approximation and detail information. DWT
+employs two sets of functions, called scaling functions and wavelet functions,
+which are associated with low pass and highpass filters, respectively. The
+decomposition of the signal into different frequency bands is simply obtained
+by successive highpass and lowpass filtering of the time domain signal. The
+original signal x[n] is first passed through a <span class="SpellE">halfband</span>
+highpass filter g[n] and a lowpass filter h[n]. After the filtering, half of
+the samples can be eliminated according to the <span class="SpellE">Nyquist�s</span>
+rule, since the signal now has a highest frequency of <span style="font-family:
+Symbol">p</span> /2 radians instead of <span class="GramE"><span style="font-family:Symbol">p</span> .</span> The signal can therefore be <span class="SpellE">subsampled</span> by 2, simply by discarding every other sample.
+This constitutes one level of decomposition and can mathematically be expressed
+as follows: </p>
+
+<p><img id="_x0000_i1028" src="Part4_files/Image12.gif" height="93" border="0" width="228"></p>
+
+<p><span class="GramE">where</span> <span class="SpellE">y<sub>high</sub></span>[k]
+and <span class="SpellE">y<sub>low</sub></span>[k] are the outputs of the
+highpass and lowpass filters, respectively, after <span class="SpellE">subsampling</span>
+by 2. </p>
+
+<p>This decomposition halves the time resolution since only half the number of
+samples now characterizes the entire signal. However, this operation doubles
+the frequency resolution, since the frequency band of the signal now spans only
+half the previous frequency band, effectively reducing the uncertainty in the
+frequency by half. The above procedure, which is also known as the <span class="SpellE">subband</span> coding, can be repeated for further decomposition.
+At every level, the filtering and <span class="SpellE">subsampling</span> will
+result in half the number of samples (and hence half the time resolution) and
+half the frequency <span class="GramE">band spanned (and hence double</span> the
+frequency resolution). Figure 4.1 illustrates this procedure, where x[n] is the
+original signal to be decomposed, and h[n] and g[n] are lowpass and highpass
+filters, respectively. The bandwidth of the signal at every level is marked on
+the figure as "f". </p>
+
+<p><img id="_x0000_i1029" src="Part4_files/Image13.gif" height="736" border="0" width="655"></p>
+
+<p><span class="GramE">Figure 4.1.</span> The <span class="SpellE">Subband</span>
+Coding Algorithm<b><i> </i></b>As an example, suppose that the original signal
+x[n] has 512 sample points, spanning a frequency band of zero to <span style="font-family:Symbol">p</span> <span class="SpellE">rad</span>/s. At the
+first decomposition level, the signal is passed through the highpass and
+lowpass filters, followed by <span class="SpellE">subsampling</span> by 2. The
+output of the highpass filter has 256 points (hence half the time resolution),
+but it only spans the frequencies <span style="font-family:Symbol">p</span>/2
+to <span style="font-family:Symbol">p</span> <span class="SpellE">rad</span>/s
+(hence double the frequency resolution). These 256 samples constitute the first
+level of DWT coefficients. The output of the lowpass filter also has 256
+samples, but it spans the other half of the frequency band, frequencies from 0
+to <span style="font-family:Symbol">p</span>/2 <span class="SpellE">rad</span>/s.
+This signal is then passed through the same lowpass and highpass filters for
+further decomposition. The output of the second lowpass filter followed by <span class="SpellE">subsampling</span> has 128 samples spanning a frequency band of 0
+to <span style="font-family:Symbol">p</span>/4 <span class="SpellE">rad</span>/s,
+and the output of the second highpass filter followed by <span class="SpellE">subsampling</span>
+has 128 samples spanning a frequency band of <span style="font-family:Symbol">p</span>/4
+to <span style="font-family:Symbol">p</span>/2 <span class="SpellE">rad</span>/s.
+The second highpass filtered signal constitutes the second level of DWT
+coefficients. This signal has half the time resolution, but twice the frequency
+resolution of the first level signal. In other words, time resolution has
+decreased by a factor of 4, and frequency resolution has increased by a factor
+of 4 compared to the original signal. The lowpass filter output is then
+filtered once again for further decomposition. This process continues until two
+samples are left. For this specific example there would be 8 levels of decomposition,
+each having half the number of samples of the previous level. The DWT of the
+original signal is then obtained by concatenating all coefficients starting
+from the last level of decomposition (remaining two samples, in this case). The
+DWT will then have the same number of coefficients as the original signal. </p>
+
+<p>The frequencies that are most prominent in the original signal will appear
+as high amplitudes in that region of the DWT signal that includes those
+particular frequencies. The difference of this transform from the Fourier
+transform is that the time localization of these frequencies will not be lost.
+However, the time localization will have a resolution that depends on which
+level they appear. If the main information of the signal lies in the high frequencies,
+as happens most often, the time localization of these frequencies will be more
+precise, since they are characterized by more number of samples. If the main
+information lies only at very low frequencies, the time localization will not
+be very precise, since few samples are used to express signal at these
+frequencies. This procedure in effect offers a good time resolution at high
+frequencies, and good frequency resolution at low frequencies. Most practical
+signals encountered are of this type. </p>
+
+<p>The frequency bands that are not very prominent in the original signal will
+have very low amplitudes, and that part of the DWT signal can be discarded
+without any major loss of information, allowing data reduction. Figure 4.2
+illustrates an example of how DWT signals look like and how data reduction is
+provided. Figure 4.2a shows a typical 512-sample signal that is normalized to
+unit amplitude. The horizontal axis is the number of samples, whereas the
+vertical axis is the normalized amplitude. Figure 4.2b shows the 8 level DWT of
+the signal in Figure 4.2a. The last 256 samples in this signal correspond to
+the highest frequency band in the <span class="GramE">signal,</span> the previous
+128 samples correspond to the second highest frequency band and so on. It
+should be noted that only the first 64 samples, which correspond to lower
+frequencies of the analysis, carry relevant information and the rest of this
+signal has virtually no information. Therefore, all but the first 64 samples
+can be discarded without any loss of information. This is how DWT provides a
+very effective data reduction scheme.</p>
+
+<p><span style="mso-spacerun:yes">�</span><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" alt="" style='width:536.25pt;height:347.25pt'>
+ <v:imagedata src="http://users.rowan.edu/~polikar/WAVELETS/Image14.gif"
+  croptop="16623f" cropbottom="15763f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part4_files/image004.jpg" v:shapes="_x0000_i1030" height="463" border="0" width="715"><!--[endif]--></p>
+
+<p>Figure 4.2 Example of a DWT</p>
+
+<p>We will revisit this example, since it provides important insight to how DWT
+should be interpreted. Before that, however, we need to conclude our
+mathematical analysis of the DWT. </p>
+
+<p>One important property of the discrete wavelet transform is the relationship
+between the impulse responses of the highpass and lowpass filters. The highpass
+and lowpass filters are not independent of each other, and they are related by </p>
+
+<p><img id="_x0000_i1031" src="Part4_files/Image7.gif" height="30" border="0" width="208"></p>
+
+<p><span class="GramE">where</span> g[n] is the highpass, h[n] is the lowpass
+filter, and L is the filter length (in number of points). Note that the two
+filters are odd index alternated reversed versions of each other. Lowpass to
+highpass conversion is provided by the (-1<span class="GramE">)<sup>n</sup></span>
+term. Filters satisfying this condition are commonly used in signal processing,
+and they are known as the <span class="SpellE">Quadrature</span> Mirror Filters
+(QMF). The two filtering and <span class="SpellE">subsampling</span> operations
+can be expressed by </p>
+
+<p><img id="_x0000_i1032" src="Part4_files/Image8.gif" height="93" border="0" width="241"></p>
+
+<p>The reconstruction in this case is very easy since <span class="SpellE">halfband</span>
+filters form <span class="SpellE">orthonormal</span> bases. The above procedure
+is followed in reverse order for the reconstruction. The signals at every level
+are <span class="SpellE">upsampled</span> by two, passed through the synthesis
+filters <span class="GramE">g�[</span>n], and h�[n] (highpass and lowpass,
+respectively), and then added. The interesting point here is that the analysis
+and synthesis filters are identical to each other, except for a time reversal.
+Therefore, the reconstruction formula becomes (for each layer)</p>
+
+<p><img id="_x0000_i1033" src="Part4_files/Image9.gif" height="56" border="0" width="436"></p>
+
+<p>However, if the filters are not ideal <span class="SpellE">halfband</span>,
+then perfect reconstruction cannot be achieved. Although it is not possible to
+realize ideal filters, under certain conditions it is possible to find filters
+that provide perfect reconstruction. The most famous ones are the ones
+developed by Ingrid Daubechies, and they are known as Daubechies� wavelets. </p>
+
+<p>Note that due to successive <span class="SpellE">subsampling</span> by 2, the
+signal length must be a power of 2, or at least a multiple of power of 2, in
+order this scheme to be efficient. The length of the signal determines the
+number of levels that the signal can be decomposed to. For example, if the
+signal length is 1024, ten levels of decomposition are possible. </p>
+
+<p>Interpreting the DWT coefficients can sometimes be rather difficult because
+the way DWT coefficients are presented is rather peculiar. To make a real long
+story real short, DWT coefficients of each level are concatenated, starting
+with the last level. An example is in order to make this concept clear: </p>
+
+<p>Suppose we have a 256-sample long signal sampled at 10 MHZ and we wish to
+obtain its DWT coefficients. Since the signal is sampled at 10 MHz, the highest
+frequency component that exists in the signal is 5 MHz. At the first level, the
+signal is passed through the lowpass filter h[n], and the highpass filter g[n],
+the outputs of which are <span class="SpellE">subsampled</span> by two. The
+highpass filter output is the first level DWT coefficients. There are 128 of
+them, and they represent the signal in the [2.5 5] MHz range. These 128 samples
+are the last 128 samples plotted. The lowpass filter output, which also has 128
+samples, but spanning the frequency band of [0 2.5] MHz, are further decomposed
+by passing them through the same h[n] and g[n]. The output of the second
+highpass filter is the level 2 DWT coefficients and these 64 samples precede
+the 128 level 1 coefficients in the plot. The output of the second lowpass
+filter is further decomposed, once again by passing it through the filters h[n]
+and g[n]. The output of the third highpass filter is the level 3 DWT <span class="SpellE">coefficiets</span>. These 32 samples precede the level 2 DWT
+coefficients in the plot. </p>
+
+<p>The procedure continues until only 1 DWT coefficient can be computed at
+level 9. This one coefficient is the first to be plotted in the DWT plot. This
+is followed by 2 level 8 coefficients, 4 level 7 coefficients, 8 level 6
+coefficients, 16 level 5 coefficients, 32 level 4 coefficients, 64 level 3
+coefficients, 128 level 2 coefficients and finally 256 level 1 coefficients.
+Note that less and less number of samples is used at lower frequencies,
+therefore, the time resolution decreases as frequency decreases, but since the
+frequency interval also decreases at low frequencies, the frequency resolution
+increases. Obviously, the first few coefficients would not carry a whole lot of
+information, simply due to greatly reduced time resolution. To illustrate this
+richly bizarre DWT representation let us take a look at a real world signal.
+Our original signal is a 256-sample long ultrasonic signal, which was sampled
+at 25 MHz. This signal was originally generated by using a 2.25 MHz <span class="GramE">transducer,</span> therefore the main spectral component of the
+signal is at 2.25 MHz. The last 128 samples correspond to [6.25 12.5] MHz
+range. As seen from the plot, no information is available <span class="GramE">here,</span>
+hence these samples can be discarded without any loss of information. The
+preceding 64 samples represent the signal in the [3.12 6.25] MHz range, which
+also does not carry any significant information. The little glitches probably
+correspond to the high frequency noise in the signal. The preceding 32 samples
+represent the signal in the [1.5 3.1] MHz range. As you can see, the majority
+of the signal�s energy is focused in these 32 samples, as we expected to see.
+The previous 16 samples correspond to [0.75 1.5] MHz and the peaks that are
+seen at this level probably represent the lower frequency envelope of the
+signal. The previous samples probably do not carry any other significant
+information. It is safe to say that we can get by with the 3<sup>rd</sup> and 4<sup>th</sup>
+level <span class="GramE">coefficients, that is</span> we can represent this 256
+sample long signal with 16+32=48 samples, a significant data reduction which
+would make your computer quite happy. </p>
+
+<p>&nbsp;One area that has benefited the most from this particular property of
+the wavelet transforms is image processing. As you may well know, images,
+particularly high-resolution images, claim a lot of disk space. As a matter of
+fact, if this tutorial is taking a long time to download, that is mostly
+because of the images. DWT can be used to reduce the image size without losing
+much of the resolution. Here is how: </p>
+
+<p>For a given image, you can compute the DWT of, say each row, and discard all
+values in the DWT that are less then a certain threshold. We then save only
+those DWT coefficients that are above the threshold for each row, and when we
+need to reconstruct the original image, we simply pad each row with as many
+zeros as the number of discarded coefficients, and use the inverse DWT to
+reconstruct each row of the original image. We can also analyze the image at
+different frequency bands, and reconstruct the original image by using only the
+coefficients that are of a particular band. I will try to put sample images
+hopefully soon, to illustrate this point.</p>
+
+<p>Another issue that is receiving more and more attention is carrying out the
+decomposition (<span class="SpellE">subband</span> coding) not only on the
+lowpass side but on both sides. <span class="GramE">In other words, zooming into
+both low and high frequency bands of the signal separately.</span> This can be
+visualized as having both sides of the tree structure of Figure 4.1. What
+result is what is known as the <b>wavelet <span class="GramE">packages<span style="font-weight:normal">.</span></span></b> We will not discuss wavelet
+packages in this here, since it is beyond the scope of this tutorial. Anyone
+who is interested in wavelet <span class="GramE">packages,</span> or more
+information on DWT can find this information in any of the numerous texts
+available in the market.</p>
+
+<p>And this concludes our mini series of wavelet tutorial. If I could be of any
+assistance to anyone struggling to understand the wavelets, I would consider
+the time and the effort that went into this tutorial well spent. I would like
+to remind that this tutorial is neither a complete nor a through coverage of
+the wavelet transforms. It is merely an overview of the concept of wavelets and
+it was intended to serve as a first reference for those who find the available
+texts on wavelets rather complicated. There might be many structural and/or
+technical mistakes, and I would appreciate if you could point those out to me.
+Your feedback is of utmost importance for the success of this tutorial. </p>
+
+<p>Thank you very much for your interest in The Wavelet <span class="GramE">Tutorial
+.</span> </p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center">
+<hr align="center" size="2" width="100%">
+
+</pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="margin-left:.5in;text-align:center"><i><span style="font-family:&quot;Cooper Black&quot;"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><span style="color:yellow;text-decoration:none;text-underline:none"><img id="_x0000_i1035" src="Part4_files/wt.htm" height="144" border="0" width="204"></span><span style="mso-bookmark:_Hlt503924471"></span><span style="mso-bookmark:_Hlt503924472"></span></a><!--[if !supportNestedAnchors]--><a name="_Hlt503924472"></a><a name="_Hlt503924471"></a><!--[endif]--></span></i><span class="MsoHyperlink"><span style="font-family:&quot;Cooper Black&quot;;color:yellow;
+text-decoration:none;text-underline:none"><o:p></o:p></span></span></pre><pre style="margin-left:.5in;text-align:center"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><i><span style="font-family:&quot;Cooper Black&quot;">Wavelet Tutorial Main Page</span></i></a><o:p></o:p></span></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:
+.5in;text-align:center"><i><span style="font-family:&quot;Cooper Black&quot;"><a href="http://users.rowan.edu/%7Epolikar/"><span style="color:yellow;text-decoration:
+none;text-underline:none"><img id="_x0000_i1042" src="Part4_files/rp1small.htm" height="79" border="0" width="99"></span><span style="mso-bookmark:_Hlt503924504"></span><span style="mso-bookmark:_Hlt503924505"></span></a><!--[if !supportNestedAnchors]--><a name="_Hlt503924505"></a><a name="_Hlt503924504"></a><!--[endif]--></span></i><span class="MsoHyperlink"><span style="font-family:&quot;Cooper Black&quot;;color:yellow;
+text-decoration:none;text-underline:none"><o:p></o:p></span></span></pre><pre style="margin-left:.5in;text-align:center"><span style="font-size:12.0pt;
+mso-bidi-font-size:10.0pt"><a href="http://users.rowan.edu/%7Epolikar"><i><span style="font-family:&quot;Cooper Black&quot;">Robi Polikar <span class="GramE">Main <span style="mso-spacerun:yes">�</span>Page</span></span> </i></a><o:p></o:p></span></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond">The Wavelet Tutorial is hosted by Rowan
+University, College of Engineering Web Servers<o:p></o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond"><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond"><span style="mso-spacerun:yes">������� </span><a href="http://engineering.rowan.edu/"><span style="text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
+ style='width:156.75pt;height:106.5pt'>
+ <v:imagedata src="WTpart4_files/image005.jpg" o:title="rowanhall"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part4_files/image006.jpg" v:shapes="_x0000_i1025" height="142" border="0" width="209"><!--[endif]--></span></a><span style="mso-spacerun:yes">��������������������</span><a href="http://www.rowan.edu/"><span style="color:white;text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shape id="_x0000_i1039" type="#_x0000_t75"
+ style='width:215.25pt;height:108.75pt'>
+ <v:imagedata src="WTpart4_files/image007.jpg" o:title="RU Logo S-BG"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part4_files/image008.jpg" v:shapes="_x0000_i1039" height="145" border="0" width="287"><!--[endif]--></span></a><o:p></o:p></span></h3>
+
+<pre style="margin-left:.5in"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in"><b><i><o:p>&nbsp;</o:p></i></b></pre>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">All
+Rights Reserved. This tutorial is intended for educational purposes only.
+Unauthorized copying, duplicating and publishing <span class="GramE">is</span>
+strictly prohibited. <br>
+<span style="mso-spacerun:yes">�</span><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Robi
+Polikar <br>
+136 Rowan Hall<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Dept.
+of Electrical and Computer Engineering<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:placename w:st="on"><b><i><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Rowan</span></i></b></st1:placename><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;"> <st1:placetype w:st="on">University</st1:placetype></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:city w:st="on"><b><i><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Glassboro</span></i></b></st1:city><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;">, <st1:state w:st="on">NJ</st1:state> <st1:postalcode w:st="on">08028</st1:postalcode></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Phone:
+(856) 256 5372<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">E-Mail:<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:230.25pt;height:48pt'>
+ <v:imagedata src="WTpart4_files/image009.png" o:title="e-mail2" croptop="23866f"
+  cropbottom="23487f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part4_files/image010.gif" v:shapes="_x0000_i1040" height="64" border="0" width="307"><!--[endif]--><span style="mso-spacerun:yes">�</span><br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--><o:p></o:p></span></i></b></p>
+
+<div style="margin-left:.5in">
+
+<div class="MsoNormal" style="text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></div>
+
+</div>
+
+</div>
+
+
+
+
+</o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></body></html>

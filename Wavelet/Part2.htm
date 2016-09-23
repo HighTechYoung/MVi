@@ -1,0 +1,1034 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:b="urn:schemas-microsoft-com:office:publisher" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<link rel="shortcut icon" href="http://users.rowan.edu/%7Epolikar/WAVELETS/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart2_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart2_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> THE WAVELET TUTORIAL PART II by ROBI POLIKAR </title>
+</head><body style="tab-interval:.5in" background="Part2_files/bg_darkblue2.gif" bgcolor="white" lang="EN-US" link="yellow" vlink="#000FFF"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PostalCode">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="State">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceName">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceType">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>College of Engineering</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Robi Polikar</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
+  <o:Created>2005-10-16T01:17:00Z</o:Created>
+  <o:LastSaved>2007-04-16T20:13:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3606</o:Words>
+  <o:Characters>20559</o:Characters>
+  <o:Company>Rowan University</o:Company>
+  <o:Lines>171</o:Lines>
+  <o:Paragraphs>48</o:Paragraphs>
+  <o:CharactersWithSpaces>24117</o:CharactersWithSpaces>
+  <o:Version>11.8122</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 536870913 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h5
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#000FFF;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	color:white;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:regrouptable v:ext="edit">
+   <o:entry new="1" old="0"/>
+   <o:entry new="2" old="0"/>
+  </o:regrouptable>
+ </o:shapelayout></xml><![endif]-->
+
+
+
+
+<div class="Section1">
+
+<h1 style="text-align:center" align="center"><span style="font-variant:small-caps">The
+Wavelet Tutorial <br>
+Part 2<o:p></o:p></span></h1>
+
+<p class="MsoNormal" style="text-align:center" align="center"><br>
+by </p>
+
+<h3 style="text-align:center" align="center"><a href="http://users.rowan.edu/%7Epolikar">ROBI POLIKAR</a><span class="MsoHyperlink"><o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1028" src="Part2_files/colorbar.htm" height="7" border="0" width="623"></p>
+
+<h3 style="text-align:center" align="center">FUNDAMENTALS: <br>
+<br>
+THE FOURIER TRANSFORM <br>
+AND <br>
+THE SHORT TERM FOURIER TRANSFORM </h3>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1029" src="Part2_files/stft2.gif" height="399" border="0" width="522"></p>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<h3 style="text-align:center" align="center">FUNDAMENTALS </h3>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<p>Let's have a short review of the first part. <br>
+We basically need Wavelet Transform (WT) to analyze non-stationary signals,
+i.e., whose frequency response varies in time. I have written that Fourier
+Transform (FT) is not suitable for non-stationary signals, and I have shown
+examples of it to make it more clear. For a quick recall, let me give the
+following example. </p>
+
+<p>Suppose we have two different signals. Also suppose that they both have the
+same spectral components, with one major difference. Say one of the signals
+have four frequency components at all times, and the other have the same four
+frequency components at different times. The FT of both of the signals would be
+the same, as shown in the example in part 1 of this tutorial. Although the two
+signals are completely different, their (magnitude of) FT are the SAME <b>!</b>.
+This, obviously tells us that we can not use the FT for non-stationary signals.
+</p>
+
+<p><b>But why does this happen?</b> In other words, how come both of the
+signals have the same FT? <b>HOW DOES FOURIER TRANSFORM WORK ANYWAY?</b> </p>
+
+<h4>An Important Milestone in Signal Processing: </h4>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<h2 style="text-align:center" align="center">THE FOURIER TRANSFORM </h2>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<p>I will not go into the details of FT for two reasons: <br>
+1. It is too wide of a subject to discuss in this tutorial. <br>
+2. It is not our main concern anyway. <br>
+However, I would like to mention a couple important points again for two
+reasons:<br>
+1. It is a necessary background to understand how WT works. <br>
+2. It has been by far the most important signal processing tool for many (and I
+mean many many) years. </p>
+
+<p>In 19th century (1822*, to be exact, but you do not need to know the exact
+time. Just trust me that it is far before than you can remember), the French
+mathematician J. Fourier, showed that any periodic function can be expressed as
+an infinite sum of periodic complex exponential functions. Many years after he
+had discovered this remarkable property of (periodic) functions, his ideas were
+generalized to first non-periodic functions, and then periodic or non-periodic
+discrete time signals. It is after this generalization that it became a very
+suitable tool for computer calculations. In 1965, a new algorithm called fast
+Fourier Transform (FFT) was developed and FT became even more popular. </p>
+
+<p>(* I thank Dr. Pedregal for the valuable information he has provided) </p>
+
+<p>Now let us take a look at how Fourier transform works: <br>
+FT decomposes a signal to complex exponential functions of different
+frequencies. The way it does this, is defined by the following two equations: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1034" src="Part2_files/fteq.gif" height="160" border="0" width="418"><br>
+Figure 2.1</p>
+
+<p>In the above equation, <b>t</b> stands for time, <b>f</b> stands for
+frequency, and <b>x</b> denotes the signal at hand. Note that <b>x</b> denotes
+the signal in time domain and the <b>X</b> denotes the signal in frequency
+domain. This convention is used to distinguish the two representations of the
+signal. Equation (1) is called the <b>Fourier transform of x(t)</b>, and
+equation (2) is called the <b>inverse Fourier transform of X(f)</b>, which is
+x(t). </p>
+
+<p>For those of you who have been using the Fourier transform are already
+familiar with this. Unfortunately many people use these equations without
+knowing the underlying principle. </p>
+
+<p>Please take a closer look at equation (1): </p>
+
+<p>The signal x(t), is multiplied with an exponential term, <b>at some certain
+frequency "f" </b>, and then integrated over <b>ALL TIMES !!!</b>
+(The key words here are "all times" , as will explained below). </p>
+
+<p>Note that the exponential term in Eqn. (1) can also be written as: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b>Cos(2.pi.f.t)+j.Sin(2.pi.f.t).......(3)
+</b></p>
+
+<p>The above expression has a real part of cosine of frequency <b>f</b>, and an
+imaginary part of sine of frequency <b>f</b>. So what we are actually doing is,
+multiplying the original signal with a complex expression which has sines and
+cosines of frequency <b>f</b>. Then we integrate this product. In other words,
+we add all the points in this product. If the result of this integration (which
+is nothing but some sort of infinite summation) is a large value, then we say
+that : <b>the signal x(t), has a dominant spectral component at frequency
+"f"</b>. This means that, a major portion of this signal is composed
+of frequency <b>f</b>. If the integration result is a small value, than this
+means that the signal does not have a major frequency component of <b>f</b> in
+it. If this integration result is zero, then the signal does not contain the
+frequency "f" at all. </p>
+
+<p>It is of particular interest here to see how this integration works: The
+signal is multiplied with the sinusoidal term of frequency "f". If
+the signal has a high amplitude component of frequency "f", then that
+component and the sinusoidal term will coincide, and the product of them will
+give <b>a (relatively) large value</b>. This shows that, the signal
+"x", has a major frequency component of "f". </p>
+
+<p>However, if the signal does not have a frequency component of "f",
+the product will yield zero, which shows that, the signal does not have a
+frequency component of "f". If the frequency "f", is not a
+major component of the signal "x(t)", then the product will give <b>a
+(relatively) small value</b>. This shows that, the frequency component
+"f" in the signal "x", has a small amplitude, in other
+words, it is not a major component of "x". </p>
+
+<p>Now, note that the integration in the transformation equation (Eqn. 1) is
+over time. The left hand side of (1), however, is a function of frequency.
+Therefore, the integral in (1), is calculated for every value of <b>f</b>. </p>
+
+<p><b>IMPORTANT(!) </b>The information provided by the integral, corresponds to
+all time instances, since the integration is from minus infinity to plus
+infinity over time. It follows that no matter where in time the component with
+frequency "f" appears, it will affect the result of the integration
+equally as well. In other words, whether the frequency component "f"
+appears at time t1 or t2 , it will have the same effect on the integration.
+This is why <b>Fourier transform is not suitable if the signal has time varying
+frequency</b>, i.e., the signal is <b>non-stationary.</b> If only the signal
+has the frequency component "f" at all times (for all "t"
+values), then the result obtained by the Fourier transform makes sense. </p>
+
+<p>Note that <b>the Fourier transform tells whether a certain frequency
+component exists or not.</b> This information is independent of where in time
+this component appears. It is therefore very important to know whether a signal
+is stationary or not, prior to processing it with the FT. </p>
+
+<p>The example given in part one should now be clear. I would like to give it
+here again: </p>
+
+<p>Look at the following figure, which shows the signal: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b>x(t)=cos(2*pi*5*t)+cos(2*pi*10*t)+cos(2*pi*20*t)+cos(2*pi*50*t)</b>
+</p>
+
+<p>that is , it has four frequency components of 5, 10, 20, and 50 Hz., all
+occurring at all times. </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1035" src="Part2_files/cosfourfreq.gif" height="407" border="0" width="471"><br>
+Figure 2.2 </p>
+
+<p>And here is the FT of it. The frequency axis has been cut here, but
+theoretically it extends to infinity (for continuous Fourier transform (CFT).
+Actually, here we calculate the discrete Fourier transform (DFT), in which case
+the frequency axis goes up to (at least) twice the sampling frequency of the
+signal, and the transformed signal is symmetrical. However, this is not that
+important at this time.) </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1036" src="Part2_files/fftcosfourfreq.gif" height="406" border="0" width="477"><br>
+Figure 2.3 </p>
+
+<p>Note the four peaks in the above figure, which correspond to four different
+frequencies. </p>
+
+<p>Now, look at the following figure: Here the signal is again the cosine
+signal, and it has the same four frequencies. However, these components occur
+at <b>different times</b>. </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1037" src="Part2_files/nonstationary.gif" height="406" border="0" width="481"><br>
+Figure 2.4 </p>
+
+<p>And here is the Fourier transform of this signal: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1038" src="Part2_files/fftnonstationary.gif" height="407" border="0" width="476"><br>
+Figure 2.5 </p>
+
+<p>What you are supposed to see in the above figure, is it is (almost) same
+with the previous FT figure. Please look carefully and note the major four peaks
+corresponding to 5, 10, 20, and 50 Hz. I could have made this figure look very
+similar to the previous one, but I did not do that on purpose. The reason of
+the noise like thing in between peaks show that, those frequencies also exist
+in the signal. But the reason they have a small amplitude , is because, <b>they
+are not major spectral components of the given signal</b>, and the reason we
+see those, is because of the sudden change between the frequencies. Especially
+note how time domain signal changes at around time 250 (ms) (With some suitable
+filtering techniques, the noise like part of the frequency domain signal can be
+cleaned, but this has not nothing to do with our subject now. If you need
+further information please send me an e-mail). </p>
+
+<p>By this time you should have understood the basic concepts of Fourier
+transform, when we can use it and we can not. As you can see from the above
+example, FT cannot distinguish the two signals very well. To FT, both signals
+are the same, because they constitute of the same frequency components.
+Therefore, FT is not a suitable tool for analyzing non-stationary signals,
+i.e., signals with time varying spectra. </p>
+
+<p>Please keep this very important property in mind. Unfortunately, many people
+using the FT do not think of this. They assume that the signal they have is
+stationary where it is not in many practical cases. Of course if you are not
+interested in<b> at what times these frequency components occur</b>, but only
+interested in what frequency components exist, then FT can be a suitable tool
+to use. </p>
+
+<p>So, now that we know that we can not use (well, we can, but we shouldn't) FT
+for non-stationary signals, what are we going to do? </p>
+
+<p>Remember that, I have mentioned that wavelet transform is only (about) a
+decade old. You may wonder if researchers noticed this non-stationarity
+business only ten years ago or not. </p>
+
+<p>Obviously not. </p>
+
+<p>Apparently they must have done something about it before they figured out
+the wavelet transform....? <br>
+<br>
+Well..., they sure did...<br>
+<br>
+They have come up with ...</p>
+
+<h5 style="text-align:center" align="center">LINEAR TIME FREQUENCY
+REPRESENTATIONS </h5>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<h2 style="text-align:center" align="center">THE SHORT TERM FOURIER TRANSFORM </h2>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<p>So, how are we going to insert this time business into our frequency plots?
+Let's look at the problem in hand little more closer. </p>
+
+<p>What was wrong with FT? It did not work for non-stationary signals. Let's
+think this: <b>Can we assume that , some portion of a non-stationary signal is
+stationary? </b></p>
+
+<p>The answer is yes. </p>
+
+<p>Just look at the third figure above. The signal is stationary every 250 time
+unit intervals. </p>
+
+<p>You may ask the following question? </p>
+
+<p>What if the part that we can consider to be stationary is very small? </p>
+
+<p>Well, if it is too small, it is too small. There is nothing we can do about
+that, and actually, there is nothing wrong with that either. We have to play
+this game with the physicists' rules. </p>
+
+<p>If this region where the signal can be assumed to be stationary is too
+small, then we look at that signal from narrow windows, narrow enough that the
+portion of the signal seen from these windows are indeed stationary. </p>
+
+<p>This approach of researchers ended up with a <b>revised </b>version of the
+Fourier transform, so-called : The Short Time Fourier Transform (STFT) . </p>
+
+<p>There is only a minor difference between STFT and FT. In STFT, the signal is
+divided into small enough segments, where these segments (portions) of the
+signal can be assumed to be stationary. For this purpose, a window function <b>"w"</b>
+is chosen. The width of this window must be equal to the segment of the signal
+where its stationarity is valid. </p>
+
+<p>This window function is first located to the very beginning of the signal.
+That is, the window function is located at t=0. Let's suppose that the width of
+the window is <b>"T"</b> s. At this time instant (t=0), the window
+function will overlap with the first <b>T/2</b> seconds (I will assume that all
+time units are in seconds). The window function and the signal are then
+multiplied. By doing this, only the first T/2 seconds of the signal is being
+chosen, with the appropriate weighting of the window (if the window is a
+rectangle, with amplitude "1", then the product will be equal to the
+signal). Then this product is assumed to be just another signal, whose FT is to
+be taken. In other words, FT of this product is taken, just as taking the FT of
+any signal. </p>
+
+<p>The result of this transformation is the FT of the first <b>T/2</b> seconds
+of the signal. If this portion of the signal is stationary, as it is assumed,
+then there will be no problem and the obtained result will be a true frequency
+representation of the first T/2 seconds of the signal. </p>
+
+<p>The next step, would be shifting this window (for some t1 seconds) to a new
+location, multiplying with the signal, and taking the FT of the product. This
+procedure is followed, until the end of the signal is reached by shifting the
+window with "t1" seconds intervals. </p>
+
+<p>The following definition of the STFT summarizes all the above explanations
+in one line: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1041" src="Part2_files/stfteqn.gif" height="124" border="0" width="669"><br>
+Figure 2.6 </p>
+
+<p>Please look at the above equation carefully. <b>x(t)</b> is the signal
+itself, <b>w(t)</b> is the window function, and <b>*</b> is the complex
+conjugate. As you can see from the equation, the STFT of the signal is nothing
+but the FT of the signal multiplied by a window function. </p>
+
+<p>For every <b>t'</b> and <b>f</b> a new STFT coefficient is computed
+(Correction: The "t" in the parenthesis of STFT should be
+"t'". I will correct this soon. I have just noticed that I have
+mistyped it). </p>
+
+<p>The following figure may help you to understand this a little better: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1042" src="Part2_files/stftfig.gif" height="297" border="0" width="672"><br>
+Figure 2.7 </p>
+
+<p>The Gaussian-like functions in color are the windowing functions. The red
+one shows the window located at t=t1', the blue shows t=t2', and the green one
+shows the window located at t=t3'. These will correspond to three different FTs
+at three different times. Therefore, we will obtain a true <b>time-frequency
+representation (TFR)</b> of the signal. </p>
+
+<p>Probably the best way of understanding this would be looking at an example.
+First of all, since our transform is a function of both time and frequency (unlike
+FT, which is a function of frequency only), the transform would be two
+dimensional (three, if you count the amplitude too). Let's take a
+non-stationary signal, such as the following one: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1043" src="Part2_files/stft_time1.gif" height="402" border="0" width="539"><br>
+Figure 2.8</p>
+
+<p>In this signal, there are four frequency components at different times. The
+interval 0 to 250 ms is a simple sinusoid of 300 Hz, and the other 250 ms
+intervals are sinusoids of 200 Hz, 100 Hz, and 50 Hz, respectively. Apparently,
+this is a non-stationary signal. Now, let's look at its STFT: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1044" src="Part2_files/stft1.gif" height="402" border="0" width="536"><br>
+Figure 2.9 </p>
+
+<p>As expected, this is two dimensional plot (3 dimensional, if you count the
+amplitude too). The "x" and "y" axes are time and
+frequency, respectively. Please, ignore the numbers on the axes, since they are
+normalized in some respect, which is not of any interest to us at this time.
+Just examine the shape of the time-frequency representation. </p>
+
+<p>First of all, note that the graph is symmetric with respect to midline of
+the frequency axis. Remember that, although it was not shown, FT of a real
+signal is always symmetric, since STFT is nothing but a windowed version of the
+FT, it should come as no surprise that STFT is also symmetric in frequency. The
+symmetric part is said to be associated with negative frequencies, an odd
+concept which is difficult to comprehend, fortunately, it is not important; it
+suffices to know that STFT and FT are symmetric. </p>
+
+<p>What is important, are the four peaks; note that there are four peaks
+corresponding to four different frequency components. Also note that, unlike
+FT, <b>these four peaks are located at different time intervals along the time
+axis </b>. Remember that the original signal had four spectral components
+located at different times. </p>
+
+<p>Now we have a true time-frequency representation of the signal. We not only
+know what frequency components are present in the signal, but we also know
+where they are located in time. </p>
+
+<p>It is grrrreeeaaatttttt!!!! Right? </p>
+
+<p>Well, not really! </p>
+
+<p>You may wonder, since STFT gives the TFR of the signal, why do we need the
+wavelet transform. The implicit problem of the STFT is not obvious in the above
+example. Of course, an example that would work nicely was chosen on purpose to
+demonstrate the concept. </p>
+
+<p>The problem with STFT is the fact whose roots go back to what is known as
+the <b>Heisenberg Uncertainty Principle </b>. This principle originally applied
+to the momentum and location of moving particles, can be applied to
+time-frequency information of a signal. Simply, this principle states that one
+cannot know the exact time-frequency representation of a signal, i.e., one
+cannot know what spectral components exist at what instances of times. What one
+<b>can </b>know are the <b>time intervals </b>in which certain <b>band of
+frequencies </b>exist, which is a <b>resolution </b>problem. </p>
+
+<p>The problem with the STFT has something to do with the <b>width </b>of the
+window function that is used. To be technically correct, this width of the
+window function is known as <b>the support </b>of the window. If the window
+function is narrow, than it is known as <b>compactly supported </b>. This
+terminology is more often used in the wavelet world, as we will see later. </p>
+
+<p>Here is what happens: </p>
+
+<p>Recall that in the FT there is no resolution problem in the frequency
+domain, i.e., we know exactly what frequencies exist; similarly we there is no
+time resolution problem in the time domain, since we know the value of the
+signal at every instant of time. Conversely, the time resolution in the FT, and
+the frequency resolution in the time domain are zero, since we have no
+information about them. What gives the perfect frequency resolution in the FT
+is the fact that the window used in the FT is its kernel, the <b>exp{jwt} </b>function,
+which lasts at all times from minus infinity to plus infinity. Now, in STFT,
+our window is of finite length, thus it covers only a portion of the signal,
+which causes the frequency resolution to get poorer. What I mean by getting
+poorer is that, we no longer know the exact frequency components that exist in
+the signal, but we only know a band of frequencies that exist: </p>
+
+<p>In FT, the kernel function, allows us to obtain perfect frequency
+resolution, because the kernel itself is a window of infinite length. In STFT
+is window is of finite length, and we no longer have perfect frequency
+resolution. You may ask, why don't we make the length of the window in the STFT
+infinite, just like as it is in the FT, to get perfect frequency resolution?
+Well, than you loose all the time information, you basically end up with the FT
+instead of STFT. To make a long story real short, we are faced with the
+following dilemma: </p>
+
+<p>If we use a window of infinite length, we get the FT, which gives perfect
+frequency resolution, but no time information. Furthermore, in order to obtain
+the stationarity, we have to have a short enough window, in which the signal is
+stationary. The narrower we make the window, the better the time resolution,
+and better the assumption of stationarity, but poorer the frequency resolution:
+</p>
+
+<p>Narrow window ===&gt;good time resolution, poor frequency resolution. <br>
+Wide window ===&gt;good frequency resolution, poor time resolution. </p>
+
+<p>In order to see these effects, let's look at a couple examples: I will show
+four windows of different length, and we will use these to compute the STFT,
+and see what happens: </p>
+
+<p>The window function we use is simply a Gaussian function in the form: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><b>w(t)=exp(-a*(t^2)/2);
+<o:p></o:p></b></p>
+
+<p>where <b>a </b>determines the length of the window, and <b>t </b>is the
+time. The following figure shows four window functions of varying regions of
+support, determined by the value of <b>a </b>. Please disregard the numeric
+values of <b>a </b>since the time interval where this function is computed also
+determines the function. Just note the length of each window. The above example
+given was computed with the second value, <b>a=0.001 </b>. I will now show the
+STFT of the same signal given above computed with the other windows. </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1045" src="Part2_files/stft_time2.gif" height="398" border="0" width="495"><br>
+Figure 2.10</p>
+
+<p>First let's look at the first most narrow window. We expect the STFT to have
+a very good time resolution, but relatively poor frequency resolution: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1046" src="Part2_files/stft2.gif" height="399" border="0" width="522"><br>
+Figure 2.11</p>
+
+<p>The above figure shows this STFT. The figure is shown from a top bird-eye
+view with an angle for better interpretation. Note that the four peaks are well
+separated from each other in time. Also note that, in frequency domain, every
+peak covers a range of frequencies, instead of a single frequency value. Now
+let's make the window wider, and look at the third window (the second one was
+already shown in the first example). </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1047" src="Part2_files/stft3.gif" height="396" border="0" width="522"><br>
+Figure 2.12</p>
+
+<p>Note that the peaks are not well separated from each other in time, unlike
+the previous case, however, in frequency domain the resolution is much better.
+Now let's further increase the width of the window, and see what happens: </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1048" src="Part2_files/stft4.gif" height="388" border="0" width="533"><br>
+Figure 2.13</p>
+
+<p>Well, this should be of no surprise to anyone now, since we would expect a
+terrible (and I mean absolutely terrible) time resolution. </p>
+
+<p>These examples should have illustrated the implicit problem of resolution of
+the STFT. Anyone who would like to use STFT is faced with this problem of
+resolution. What kind of a window to use? Narrow windows give good time
+resolution, but poor frequency resolution. Wide windows give good frequency
+resolution, but poor time resolution; furthermore, wide windows may violate the
+condition of stationarity. The problem, of course, is a result of choosing a
+window function, once and for all, and use that window in the entire analysis.
+The answer, of course, is application dependent: If the frequency components
+are well separated from each other in the original signal, than we may
+sacrifice some frequency resolution and go for good time resolution, since the
+spectral components are already well separated from each other. However, if
+this is not the case, then a good window function, could be more difficult than
+finding a good stock to invest in. </p>
+
+<p>By now, you should have realized how wavelet transform comes into play. The
+Wavelet transform (WT) solves the dilemma of resolution to a certain extent, as
+we will see in the next part. </p>
+
+<p>This completes Part II of this tutorial. The continuous wavelet transform is
+the subject of the Part III of this tutorial. If you did not have much trouble
+in coming this far, and what have been written above make sense to you, you are
+now ready to take the ultimate challenge in understanding the basic concepts of
+the wavelet theory. </p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center">
+<hr align="center" size="2" width="100%">
+
+</pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t156" coordsize="21600,21600" o:spt="156" adj="2809,10800" path="m@25@0c@26@3@27@1@28@0m@21@4c@22@5@23@6@24@4e">
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="prod @0 41 9"/>
+  <v:f eqn="prod @0 23 9"/>
+  <v:f eqn="sum 0 0 @2"/>
+  <v:f eqn="sum 21600 0 #0"/>
+  <v:f eqn="sum 21600 0 @1"/>
+  <v:f eqn="sum 21600 0 @3"/>
+  <v:f eqn="sum #1 0 10800"/>
+  <v:f eqn="sum 21600 0 #1"/>
+  <v:f eqn="prod @8 2 3"/>
+  <v:f eqn="prod @8 4 3"/>
+  <v:f eqn="prod @8 2 1"/>
+  <v:f eqn="sum 21600 0 @9"/>
+  <v:f eqn="sum 21600 0 @10"/>
+  <v:f eqn="sum 21600 0 @11"/>
+  <v:f eqn="prod #1 2 3"/>
+  <v:f eqn="prod #1 4 3"/>
+  <v:f eqn="prod #1 2 1"/>
+  <v:f eqn="sum 21600 0 @15"/>
+  <v:f eqn="sum 21600 0 @16"/>
+  <v:f eqn="sum 21600 0 @17"/>
+  <v:f eqn="if @7 @14 0"/>
+  <v:f eqn="if @7 @13 @15"/>
+  <v:f eqn="if @7 @12 @16"/>
+  <v:f eqn="if @7 21600 @17"/>
+  <v:f eqn="if @7 0 @20"/>
+  <v:f eqn="if @7 @9 @19"/>
+  <v:f eqn="if @7 @10 @18"/>
+  <v:f eqn="if @7 @11 21600"/>
+  <v:f eqn="sum @24 0 @21"/>
+  <v:f eqn="sum @4 0 @0"/>
+  <v:f eqn="max @21 @25"/>
+  <v:f eqn="min @24 @28"/>
+  <v:f eqn="prod @0 2 1"/>
+  <v:f eqn="sum 21600 0 @33"/>
+  <v:f eqn="mid @26 @27"/>
+  <v:f eqn="mid @24 @28"/>
+  <v:f eqn="mid @22 @23"/>
+  <v:f eqn="mid @21 @25"/>
+ </v:formulas>
+ <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@35,@0;@38,10800;@37,@4;@36,10800"
+  o:connectangles="270,180,90,0"/>
+ <v:textpath on="t" fitshape="t" xscale="t"/>
+ <v:handles>
+  <v:h position="topLeft,#0" yrange="0,4459"/>
+  <v:h position="#1,bottomRight" xrange="8640,12960"/>
+ </v:handles>
+ <o:lock v:ext="edit" text="t" shapetype="t"/>
+</v:shapetype><v:shape id="_x0000_s1041" type="#_x0000_t156" style='position:absolute;
+ margin-left:214pt;margin-top:.05pt;width:241.5pt;height:46.5pt;z-index:3'
+ fillcolor="#f60" stroked="f">
+ <v:fill color2="#ff9" focus="-50%" type="gradient"/>
+ <v:shadow color="silver" opacity="52429f" offset="3pt,3pt"/>
+ <v:textpath style='font-family:"Times New Roman";font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" xscale="f" string="polikar@rowan.edu"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:
+relative;z-index:3"><span style="position:absolute;left:285px;top:-1px;
+width:323px;height:55px"><img src="Part2_files/image001.gif" alt="polikar@rowan.edu" v:shapes="_x0000_s1041" height="55" width="323"></span></span><!--[endif]--><o:p>&nbsp;</o:p></pre><br style="mso-ignore:vglayout" clear="ALL">
+<pre>Send your comments / questions to: </pre><pre><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:
+center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><span style="font-family:&quot;Cooper Black&quot;"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><span style="text-decoration:none;text-underline:none"><img id="_x0000_i1051" src="Part2_files/wt.htm" height="144" border="0" width="204"></span><span style="mso-bookmark:_Hlt503924471"></span><span style="mso-bookmark:_Hlt503924472"></span></a><!--[if !supportNestedAnchors]--><a name="_Hlt503924472"></a><a name="_Hlt503924471"></a><!--[endif]--></span></i><span class="MsoHyperlink"><span style="font-family:&quot;Cooper Black&quot;;text-decoration:
+none;text-underline:none"><o:p></o:p></span></span></pre><pre style="text-align:
+center"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><i><span style="font-family:&quot;Cooper Black&quot;">Wavelet Tutorial Main Page</span></i></a></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><a href="http://engineering.rowan.edu/%7Epolikar/ABOUTME"><span style="color:white;
+text-decoration:none;text-underline:none"><!--[if gte vml 1]><v:rect id="_x0000_i1025"
+ href="http://engineering.rowan.edu/~polikar/ABOUTME" style='width:63pt;
+ height:46.5pt;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt'
+ o:allowoverlap="f" o:button="t" filled="f" o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="white"/>
+  <o:top v:ext="view" color="white"/>
+  <o:right v:ext="view" color="white"/>
+  <o:bottom v:ext="view" color="white"/>
+  <o:column v:ext="view" color="white"/>
+ </v:stroke>
+ <v:imagedata src="WTpart2_files/image005.png" o:title="RP Logo"/>
+ <v:shadow color="#ccc"/>
+</v:rect><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout"><img src="Part2_files/image002.jpg" v:shapes="_x0000_i1025" height="64" border="0" hspace="4" vspace="4" width="86"></span><!--[endif]--></span></a><i><o:p></o:p></i></pre><pre style="text-align:center"><i><span style="font-family:&quot;Cooper Black&quot;"><a href="http://users.rowan.edu/%7Epolikar/">Robi Polikar Home</a></span></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in"><i><o:p>&nbsp;</o:p></i></pre>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond">The Wavelet Tutorial is hosted by Rowan
+University, College of Engineering Web Servers<o:p></o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><!--[if gte vml 1]><v:group
+ id="_x0000_s1040" style='position:absolute;left:0;text-align:left;
+ margin-left:86.1pt;margin-top:12.1pt;width:102.45pt;height:107.9pt;z-index:2'
+ coordorigin="2016,2296" coordsize="2049,2158">
+ <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1037" type="#_x0000_t202" style='position:absolute;
+  left:2016;top:3824;width:2049;height:630;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' o:regroupid="2" filled="f" stroked="f"
+  strokecolor="white" strokeweight="0" insetpen="t">
+  <v:stroke>
+   <o:left v:ext="view" color="white"/>
+   <o:top v:ext="view" color="white"/>
+   <o:right v:ext="view" color="white"/>
+   <o:bottom v:ext="view" color="white"/>
+   <o:column v:ext="view" color="white" weight="0"/>
+  </v:stroke>
+  <v:shadow color="#ccc"/>
+  <v:textbox style='mso-next-textbox:#_x0000_s1037;mso-column-margin:5.7pt;
+   mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal align=center style='text-align:center;mso-pagination:
+     none'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+     mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+     "Copperplate Gothic Bold"'><span lang=EN style='font-family:"Copperplate Gothic Bold";
+     mso-ansi-language:EN'>College of <o:p></o:p></span></p>
+     </span><span style='mso-default-font-family:"Copperplate Gothic Bold";
+     mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+     "Copperplate Gothic Bold"'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+     mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+     "Copperplate Gothic Bold"'>
+     <p class=MsoNormal align=center style='text-align:center;mso-pagination:
+     none'><span lang=EN style='font-family:"Copperplate Gothic Bold";
+     mso-ansi-language:EN'>Engineering<o:p></o:p></span></p>
+     </span></div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:rect id="_x0000_s1038" href="http://engineering.rowan.edu/"
+  style='position:absolute;left:2121;top:2296;width:1800;height:630;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' o:regroupid="2"
+  o:button="t" filled="f" stroked="f" strokecolor="white" strokeweight="0"
+  insetpen="t">
+  <v:stroke>
+   <o:left v:ext="view" color="white"/>
+   <o:top v:ext="view" color="white"/>
+   <o:right v:ext="view" color="white"/>
+   <o:bottom v:ext="view" color="white"/>
+   <o:column v:ext="view" color="white"/>
+  </v:stroke>
+  <v:shadow color="#ccc"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect></v:group><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;
+position:absolute;z-index:2;left:0px;margin-left:115px;margin-top:16px;
+width:140px;height:146px"><map name="MicrosoftOfficeMap0"><area shape="Rect" coords="9, 0, 129, 42" href="http://engineering.rowan.edu/"></map><img src="Part2_files/image003.gif" usemap="#MicrosoftOfficeMap0" v:shapes="_x0000_s1040 _x0000_s1037 _x0000_s1038" height="146" border="0" width="140"></span><!--[endif]--><a href="http://engineering.rowan.edu/"><span style="color:white;text-decoration:
+none;text-underline:none"><!--[if gte vml 1]><v:rect id="_x0000_i1026"
+ href="http://engineering.rowan.edu/" style='width:90pt;height:88.5pt;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt;
+ mso-position-horizontal:absolute;mso-position-vertical:absolute'
+ o:allowoverlap="f" o:button="t" filled="f" o:cliptowrap="t">
+ <v:fill o:detectmouseclick="t"/>
+ <v:stroke>
+  <o:left v:ext="view" color="white"/>
+  <o:top v:ext="view" color="white"/>
+  <o:right v:ext="view" color="white"/>
+  <o:bottom v:ext="view" color="white"/>
+  <o:column v:ext="view" color="white"/>
+ </v:stroke>
+ <v:imagedata src="WTpart2_files/image009.png" o:title="full_atrium_interior[1]"/>
+ <v:shadow color="#ccc"/>
+</v:rect><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout"><img src="Part2_files/image013.jpg" v:shapes="_x0000_i1026" height="120" border="0" hspace="4" vspace="4" width="122"></span><!--[endif]--></span></a><span style="font-family:Garamond"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><a href="http://www.rowan.edu/"><span style="color:white;text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ href="http://www.rowan.edu/" style='width:163.5pt;height:82.5pt;
+ mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+ mso-position-vertical:absolute;mso-position-vertical-relative:text'
+ o:allowoverlap="f" o:button="t">
+ <v:fill o:detectmouseclick="t"/>
+ <v:imagedata src="WTpart2_files/image007.jpg" o:title="RU Logo S-BG"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout"><img src="Part2_files/image014.jpg" v:shapes="_x0000_i1027" height="110" border="0" width="218"></span><!--[endif]--></span></a><span style="font-family:Garamond"><o:p></o:p></span></h3>
+
+<pre style="margin-left:.5in"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in"><b><i><o:p>&nbsp;</o:p></i></b></pre><pre style="margin-left:.5in"><b><i><o:p>&nbsp;</o:p></i></b></pre><pre style="margin-left:.5in"><b><i><o:p>&nbsp;</o:p></i></b></pre>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">All
+Rights Reserved. This tutorial is intended for educational purposes only.
+Unauthorized copying, duplicating and publishing is strictly prohibited. <br>
+<span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Robi
+Polikar <br>
+136 Rowan Hall<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Dept.
+of Electrical and Computer Engineering<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:placename w:st="on"><b><i><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Rowan</span></i></b></st1:placename><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;"> <st1:placetype w:st="on">University</st1:placetype></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:city w:st="on"><b><i><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Glassboro</span></i></b></st1:city><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;">, <st1:state w:st="on">NJ</st1:state> <st1:postalcode w:st="on">08028</st1:postalcode></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Phone:
+(856) 256 5372<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">E-Mail
+<br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1028" type="#_x0000_t156" style='position:absolute;left:0;
+ text-align:left;margin-left:36pt;margin-top:-15.2pt;width:235.5pt;height:43.35pt;
+ z-index:1;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#f60"
+ strokecolor="#ff9" strokeweight=".5pt" o:cliptowrap="t">
+ <v:fill color2="#ff9" rotate="t" focus="-50%" type="gradient"/>
+ <v:stroke>
+  <o:left v:ext="view" color="white"/>
+  <o:top v:ext="view" color="white"/>
+  <o:right v:ext="view" color="white"/>
+  <o:bottom v:ext="view" color="white"/>
+  <o:column v:ext="view" color="white"/>
+ </v:stroke>
+ <v:shadow color="silver" opacity="52429f" offset="3pt,3pt"/>
+ <v:path insetpenok="f"/>
+ <v:textpath style='font-family:"Times New Roman";v-text-kern:t' trim="t"
+  fitpath="t" xscale="f" string="polikar@rowan.edu"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:
+relative;z-index:1"><span style="left:0px;position:absolute;left:47px;
+top:-21px;width:316px;height:53px"><img src="Part2_files/image012.gif" alt="polikar@rowan.edu" v:shapes="_x0000_s1028" height="53" width="316"></span></span><!--[endif]--><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></i></b></p>
+
+<br style="mso-ignore:vglayout" clear="ALL">
+
+<div style="margin-left:.5in">
+
+<div class="MsoNormal" style="text-align:center;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></div>
+
+</div>
+
+</div>
+
+
+
+
+</o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></body></html>

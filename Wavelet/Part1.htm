@@ -1,0 +1,883 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<link rel="shortcut icon" href="http://users.rowan.edu/%7Epolikar/WAVELETS/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart1_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTpart1_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>THE WAVELET TUTORIAL PART I by ROBI POLIKAR </title>
+</head><body style="tab-interval:.5in" background="Part1_files/bg_darkblue2.gif" bgcolor="white" lang="EN-US" link="yellow" vlink="#000FFF"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PostalCode">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="State">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceType">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PlaceName">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="country-region">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>College of Engineering</o:Author>
+  <o:LastAuthor>Robi Polikar</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>36</o:TotalTime>
+  <o:Created>2005-10-16T04:41:00Z</o:Created>
+  <o:LastSaved>2006-03-21T19:45:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3565</o:Words>
+  <o:Characters>20322</o:Characters>
+  <o:Company>Rowan University</o:Company>
+  <o:Lines>169</o:Lines>
+  <o:Paragraphs>47</o:Paragraphs>
+  <o:CharactersWithSpaces>23840</o:CharactersWithSpaces>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Cooper Black";
+	panose-1:2 8 9 4 4 3 11 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:white;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#000FFF;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	color:white;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="4098"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+
+
+
+
+<div class="Section1">
+
+<h1 style="text-align:center" align="center"><span style="text-transform:uppercase">The
+Wavelet Tutorial </span><br>
+<span style="text-transform:uppercase">Part I</span></h1>
+
+<p class="MsoNormal" style="text-align:center" align="center"><span class="GramE">by</span>
+</p>
+
+<h3 style="text-align:center" align="center"><a href="http://users.rowan.edu/%7Epolikar">ROBI POLIKAR</a><span class="MsoHyperlink"><o:p></o:p></span></h3>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1028" src="Part1_files/colorbar.htm" height="7" border="0" width="622"></p>
+
+<h2 style="text-align:center" align="center">FUNDAMENTAL CONCEPTS <br>
+&amp; <br>
+AN OVERVIEW OF THE WAVELET THEORY <br>
+<br>
+Second Edition<br>
+NEW! – Thanks to <span class="MsoPageNumber"><i style="mso-bidi-font-style:
+normal"><span style="mso-ansi-language:FR" lang="FR">Noël K. MAMALET</span></i></span><span class="MsoPageNumber"><span style="mso-ansi-language:FR;font-weight:normal;
+mso-bidi-font-weight:bold" lang="FR">,</span></span><span class="MsoPageNumber"><span style="mso-ansi-language:FR" lang="FR"> <a href="http://lycee-ledantec.ac-rennes.fr/upload/PO/Ondelettes/POLIKAR%201.htm"><span class="SpellE">this</span> tutorial <span class="SpellE">is</span> <span class="SpellE">now</span> <span class="SpellE">available</span> in French</a></span></span></h2>
+
+<p class="MsoNormal" style="text-align:center" align="center"><br>
+<img id="_x0000_i1029" src="Part1_files/waveletrp2.gif" height="349" border="0" width="504"></p>
+
+<p>Welcome to this introductory tutorial on wavelet transforms. The wavelet transform
+is a relatively new concept (about 10 years old), but yet there are quite a few
+articles and books written on them. However, most of these books and articles
+are written by math people, for the other math people; still most of the math
+people don't know what the other math people are talking about (a math
+professor of mine made this confession). In other words, majority of the
+literature available on wavelet transforms are of little help, if any, to those
+who are new to this subject (this is my personal opinion).</p>
+
+<p>When I first started working on wavelet transforms I have struggled for many
+hours and days to figure out what was going on in this mysterious world of
+wavelet transforms, due to the lack of introductory level text(s) in this
+subject. Therefore, I have decided to write this tutorial for the ones who are
+new to <span class="GramE">the this</span> topic. I consider myself quite new to
+the subject too, and I have to confess that I have not figured out all the
+theoretical details yet. However, as far as the engineering applications are
+concerned, I think all the theoretical details are not necessarily necessary
+(!).</p>
+
+<p>In this tutorial I will try to give basic principles underlying the wavelet
+theory. The proofs of the theorems and related equations will not be given in
+this tutorial due to the simple assumption that the intended readers of this
+tutorial do not need them at this time. However, interested readers will be
+directed to related references for further and in-depth information.</p>
+
+<p>In this document I am assuming that you have no background knowledge,
+whatsoever. If you do have this background, please disregard the following
+information, since it may be trivial. </p>
+
+<p>Should you find any <span class="GramE">inconsistent,</span> or incorrect
+information in the following tutorial, please feel free to contact me. I will
+appreciate any comments on this page.</p>
+
+<p class="MsoNormal"><i>Robi POLIKAR </i>************************************************************************
+</p>
+
+<h3>TRANS... WHAT?</h3>
+
+<p>First of all, why do we need a transform, or what is a transform anyway?</p>
+
+<p>Mathematical transformations are applied to signals to obtain <span class="GramE">a further</span> information from that signal that is not readily
+available in the raw signal. In the following tutorial I will assume a
+time-domain signal as a <b>raw</b> signal, and a signal that has been "transformed"
+by any of the available mathematical transformations as a <b>processed </b>signal.</p>
+
+<p>There are <span class="GramE">number</span> of transformations that can be
+applied, among which the Fourier transforms are probably by far the most
+popular.</p>
+
+<p>Most of the signals in <span class="GramE">practice,</span> are <b>TIME-DOMAIN</b>
+signals in their raw format. That is, whatever that signal is measuring, is a
+function of time. In other words, when we plot the signal one of the axes is
+time (independent variable), and the other (dependent variable) is usually the
+amplitude. When we plot time-domain signals, we obtain a <b>time-amplitude
+representation</b> of the signal. This representation is not always the best
+representation of the signal for most signal processing related applications.
+In many cases, the most distinguished information is hidden in the frequency
+content of the signal. The <b>frequency SPECTRUM</b> of a signal is basically
+the frequency components (spectral components) of that signal. The frequency
+spectrum of a signal shows what frequencies exist in the signal. </p>
+
+<p>Intuitively, we all know that the frequency is something to do with the
+change in rate of something. If something <span class="GramE">( a</span>
+mathematical or physical variable, would be the technically correct term)
+changes rapidly, we say that it is of high frequency, where as if this variable
+does not change rapidly, i.e., it changes smoothly, we say that it is of low
+frequency. If this variable does not change at all, then we say it has zero
+frequency, or no frequency. For example the publication frequency of a daily
+newspaper is higher than that of a monthly magazine (it is published more
+frequently). </p>
+
+<p>The frequency is measured in cycles/second, or with a more common name, in
+"Hertz". For example the electric power we use in our daily life in
+the <st1:country-region w:st="on"><st1:place w:st="on">US</st1:place></st1:country-region>
+is 60 Hz (50 Hz elsewhere in the world). This means that if you try to plot the
+electric current, it will be a sine wave passing through the same point 50
+times in 1 second. Now, look at the following figures. The first one is a sine
+wave at 3 Hz, the second one at 10 Hz, and the third one at 50 Hz. Compare
+them.</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1030" src="Part1_files/figure1_123.gif" height="516" border="0" width="526"></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p>So how do we measure frequency, or how do we find the frequency content of a
+signal? The answer is <b>FOURIER TRANSFORM (FT)</b>. If the FT of a signal in
+time domain is taken, the frequency-amplitude representation of that signal is
+obtained. In other words, we now have a plot with one axis being the frequency
+and the other being the amplitude. This plot tells us how much of each frequency
+exists in our signal.</p>
+
+<p>The frequency axis starts from zero, and goes up to infinity. For every
+frequency, we have an amplitude value. For example, if we take the FT of the
+electric current that we use in our houses, we will have one spike at 50 Hz,
+and nothing elsewhere, since that signal has only 50 Hz frequency component. No
+other signal, however, has a FT which is this simple. For most practical
+purposes, signals contain more than one frequency component. The following
+shows the FT of the 50 Hz signal:</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1031" src="Part1_files/figure1_4.gif" height="453" border="0" width="522"><br>
+Figure 1.4 The FT of the 50 Hz signal given in Figure 1.3 </p>
+
+<p>One word of caution is in order at this point. Note that two plots are given
+in Figure 1.4. The bottom one plots only the first half of the top one. Due to
+reasons that are not crucial to know at this time, the frequency spectrum of a
+real valued signal is always symmetric. The top plot illustrates this point.
+However, since the symmetric part is exactly a mirror image of the first part,
+it provides no additional information, and therefore, this symmetric second
+part is usually not shown. In most of the following figures corresponding to
+FT, I will only show the first half of this symmetric spectrum. </p>
+
+<h3>Why do we need the frequency information? </h3>
+
+<p>Often times, the information that cannot be readily seen in the time-domain
+can be seen in the frequency domain.</p>
+
+<p>Let's give an example from biological signals. Suppose we are looking at an
+ECG signal (<span class="SpellE">ElectroCardioGraphy</span>, graphical recording
+of heart's electrical activity). The typical shape of a healthy ECG signal is
+well known to cardiologists. Any significant deviation from that shape is
+usually considered to be a symptom of a pathological condition. </p>
+
+<p>This pathological condition, however, may not always be quite obvious in the
+original time-domain signal. Cardiologists usually use the time-domain ECG
+signals which are recorded on strip-charts to analyze ECG signals. Recently,
+the new computerized ECG recorders/analyzers also utilize the frequency
+information to decide whether a pathological condition exists. A pathological
+condition can sometimes be diagnosed more easily when the frequency content of
+the signal is analyzed.</p>
+
+<p>This, of course, is only one simple example why frequency content might be
+useful. Today Fourier transforms are used in many different areas including all
+branches of engineering.</p>
+
+<p>Although FT is probably the most popular transform being used (especially in
+electrical engineering), it is not the only one. There are many other
+transforms that are used quite often by engineers and mathematicians. Hilbert
+transform, short-time Fourier transform (more about this later), Wigner
+distributions, the Radon Transform, and of course our <b>featured transformation
+</b>, the wavelet transform, constitute only a small portion of a huge list of
+transforms that are available at engineer's and mathematician's disposal. Every
+transformation technique has its own area of application, with advantages and
+disadvantages, and the wavelet transform (WT) is no exception.</p>
+
+<p>For a better understanding of the need for the WT let's look at the FT more
+closely. FT (as well as WT) is a reversible transform, that is, it allows <span class="GramE">to go back and forward</span> between the raw and processed
+(transformed) signals. However, only either of them is available at any given
+time. That is, no frequency information is available in the time-domain signal,
+and no time information is available in the Fourier transformed signal. The
+natural question that comes to mind is that is it necessary to have both the
+time and the frequency information at the same time?</p>
+
+<p>As we will see soon, the answer depends on the particular <span class="GramE">application,</span>
+and the nature of the signal in hand. Recall that the FT gives the frequency
+information of the signal, which means that it tells us how much of each
+frequency exists in the signal, but it does not tell us <b>when in time </b>these
+frequency components exist. This information is not required when the signal is
+so-called <span class="GramE"><b>stationary </b>.</span></p>
+
+<p>Let's take a closer look at this <span class="SpellE"><b>stationarity</b></span><b>
+</b>concept more closely, since it is of paramount importance in signal
+analysis. Signals whose frequency content do not change in time are called <b>stationary
+<span class="GramE">signals <span style="font-weight:normal">.</span></span></b>
+In other words, the frequency content of stationary signals <span class="GramE">do</span>
+not change in time. In this case, one does not need to know <b>at what times
+frequency components <span class="GramE">exist <span style="font-weight:normal">,</span></span></b>
+since <b>all frequency components exist at all times !!! </b>.</p>
+
+<p>For example the following signal</p>
+
+<p class="MsoNormal" style="text-align:center" align="center">x(t)=<span class="SpellE">cos</span>(2*pi*10*t)+<span class="SpellE">cos</span>(2*pi*25*t)+<span class="SpellE">cos</span>(2*pi*50*t)+<span class="SpellE">cos</span>(2*pi*100*t) </p>
+
+<p><span class="GramE">is</span> a stationary signal, because it has frequencies
+of 10, 25, 50, and 100 Hz at any given time instant. This signal is plotted
+below:</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1032" src="Part1_files/figure1_5.gif" height="244" border="0" width="490"><br>
+Figure 1.5 </p>
+
+<p>And the following is its FT:</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1033" src="Part1_files/figure1_6.gif" height="380" border="0" width="507"><br>
+Figure 1.6</p>
+
+<p>The top plot in Figure 1.6 is the (half of the symmetric) frequency spectrum
+of the signal in Figure 1.5. The bottom plot is the zoomed version of the top
+plot, showing only the range of frequencies that are of interest to us. Note
+the four spectral components corresponding to the frequencies 10, 25, 50 and
+100 Hz. </p>
+
+<p>Contrary to the signal in Figure 1.5, the following signal is not
+stationary. Figure 1.7 plots a signal whose frequency constantly changes in
+time. This signal is known as the "chirp" signal. This is a
+non-stationary signal. </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1034" src="Part1_files/figure1_7.gif" height="242" border="0" width="507"><br>
+Figure 1.7</p>
+
+<p>Let's look at another example. Figure 1.8 plots a signal with four different
+frequency components at four different time intervals, hence a non-stationary
+signal. The interval 0 to 300 ms has a 100 Hz sinusoid, the interval 300 to 600
+ms has a 50 Hz sinusoid, the interval 600 to 800 ms has a 25 Hz sinusoid, and
+finally the interval 800 to 1000 ms has a 10 Hz sinusoid.</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1035" src="Part1_files/figure1_8.gif" height="360" border="0" width="510"><br>
+Figure 1.8</p>
+
+<p>And the following is its FT:</p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><img id="_x0000_i1036" src="Part1_files/figure1_9.gif" height="356" border="0" width="513"><br>
+Figure 1.9</p>
+
+<p>Do not worry about the little ripples at this time; they are due to sudden
+changes from one frequency component to another, which have no significance in
+this text. Note that the amplitudes of higher frequency components are higher
+than those of the lower frequency ones. This is due to fact that higher
+frequencies last longer (300 ms each) than the lower frequency components (200
+ms each). (The exact <span class="GramE">value of the amplitudes are</span> not
+important). </p>
+
+<p>Other than those ripples, everything seems to be right. The FT has four
+peaks, corresponding to four frequencies with reasonable amplitudes... Right</p>
+
+<p class="MsoNormal"><b>WRONG (!)</b> </p>
+
+<p>Well, not exactly wrong, but not exactly right either...<br>
+Here is why:</p>
+
+<p>For the first signal, plotted in Figure 1.5, consider the following
+question:</p>
+
+<p>At what times (or time intervals), do these frequency components occur?</p>
+
+<p>Answer:</p>
+
+<p>At all times! Remember that in stationary signals, all frequency components
+that exist in the <span class="GramE">signal,</span> exist throughout the entire
+duration of the signal. There is 10 Hz at all times, there is 50 Hz at all
+times, and there is 100 Hz at all times.</p>
+
+<p>Now, consider the same question for the non-stationary signal in Figure 1.7
+or in Figure 1.8. </p>
+
+<p>At what times these frequency components occur?</p>
+
+<p>For the signal in Figure 1.8, we know that in the first interval we have the
+highest frequency component, and in the last interval we have the lowest
+frequency component. For the signal in Figure 1.7, the frequency components
+change continuously. Therefore, for these signals the frequency components <b>do
+not </b>appear at all times! </p>
+
+<p>Now, compare the Figures 1.6 and 1.9. The similarity between these two <span class="GramE">spectrum</span> should be apparent. Both of them show four spectral
+components at exactly the same frequencies, i.e., at 10, 25, 50, and 100 Hz.
+Other than the ripples, and the difference in amplitude (which can always be
+normalized), the two spectrums are almost identical, although the corresponding
+time-domain signals are not even close to each other. Both of the signals <span class="GramE">involves</span> the same frequency components, but the first one
+has these frequencies at all times, the second one has these frequencies at
+different intervals. So, how come the spectrums of two entirely different
+signals look very much alike? Recall that the FT gives the spectral content of
+the signal, but it gives no information regarding <b>where in time those
+spectral components <span class="GramE">appear <span style="font-weight:normal">.</span></span></b>
+Therefore, FT is not a suitable technique for non-stationary signal, with one
+exception: </p>
+
+<p>FT can be used for non-stationary signals, if we are only interested in what
+spectral components exist in the signal, but not interested where these occur.
+However, if this information is needed, i.e., if we want to know, what spectral
+component occur at what time (interval) , then Fourier transform is not the
+right transform to use.</p>
+
+<p>For practical purposes it is difficult to make the separation, since there
+are a lot of practical stationary signals, as well as non-stationary ones.
+Almost all biological signals, for example, are non-stationary. Some of the
+most famous ones are ECG (electrical activity of the <span class="GramE">heart ,</span>
+electrocardiograph), EEG (electrical activity of the brain,
+electroencephalograph), and EMG (electrical activity of the muscles,
+electromyogram).</p>
+
+<p><b>Once again please note that, the FT gives what frequency components
+(spectral components) exist in the signal. <span class="GramE">Nothing more,
+nothing less.</span></b></p>
+
+<p>When the <b>time localization </b>of the spectral components <span class="GramE">are</span> needed, a transform giving the TIME-FREQUENCY
+REPRESENTATION of the signal is needed.</p>
+
+<div class="MsoNormal" style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</div>
+
+<h3 style="text-align:center" align="center">THE ULTIMATE SOLUTION: </h3>
+
+<h2 style="text-align:center" align="center">THE WAVELET TRANSFORM </h2>
+
+<p>The Wavelet transform is a transform of this type. It provides the
+time-frequency representation. (There are other transforms which give this
+information too, such as short time Fourier <span class="GramE">transform</span>,
+Wigner distributions, etc.)</p>
+
+<p>Often times a particular spectral component occurring at any instant can be
+of particular interest. In these cases it may be very beneficial to know the
+time intervals these particular spectral components occur. For example, in
+EEGs, the latency of an event-related potential is of particular interest
+(Event-related potential is the response of the brain to a specific stimulus
+like flash-light, the latency of this response is the amount of time elapsed
+between the onset of the stimulus and the response).</p>
+
+<p>Wavelet transform is capable of providing the time and frequency information
+simultaneously, hence giving a time-frequency representation of the signal.</p>
+
+<p>How wavelet transform works is completely a different fun story, and should
+be explained after <b>short time Fourier Transform (STFT<span class="GramE">) <span style="font-weight:normal">.</span></span></b> The WT was developed as an
+alternative to the STFT. The STFT will be explained in great detail in the
+second part of this tutorial. It suffices at this time to say that the WT was
+developed to overcome some resolution related problems of the STFT, as
+explained in Part II. </p>
+
+<p>To make a real long story short, we pass the time-domain signal from various
+highpass and low pass filters, which <span class="GramE">filters</span> out
+either high frequency or low frequency portions of the signal. This procedure
+is repeated, every time some portion of the signal corresponding to some
+frequencies being removed from the signal.</p>
+
+<p>Here is how this works: Suppose we have a signal which has frequencies up to
+1000 Hz. In the first stage we split up the signal in to two parts by passing
+the signal from a highpass and a lowpass filter (filters should satisfy some
+certain conditions, so-called <b>admissibility condition</b>) which results in
+two different versions of the same signal: portion of the signal corresponding
+to 0-500 Hz (low pass portion), and 500-1000 Hz (high pass portion). </p>
+
+<p>Then, we take either portion (usually low pass portion) or both, and do the
+same thing again. This operation is called <span class="GramE"><b>decomposition </b>.</span>
+</p>
+
+<p>Assuming that we have taken the lowpass portion, we now have 3 sets of data,
+each corresponding to the same signal at frequencies 0-250 Hz, 250-500 Hz,
+500-1000 Hz.</p>
+
+<p>Then we take the lowpass portion again and pass it through low and high pass
+filters; we now have 4 sets of signals corresponding to 0-125 Hz, 125-250 Hz<span class="GramE">,250</span>-500 Hz, and 500-1000 Hz. We continue like this until we
+have decomposed the signal to a pre-defined certain level. Then we have a bunch
+of signals, which actually represent the same signal, but all corresponding to
+different frequency bands. We know which signal corresponds to which frequency
+band, and if we put all of them together and plot them on a 3-D graph, we will
+have time in one axis, frequency in the second and amplitude in the third axis.
+This will show us which frequencies exist at which time ( there is an issue,
+called "uncertainty principle", which states that, we cannot exactly
+know <b>what frequency exists </b>at <b>what time instance </b>, but we can
+only know <b>what frequency bands </b>exist at <b>what time intervals </b>,
+more about this in the subsequent parts of this tutorial). </p>
+
+<p>However, I still would like to explain it briefly:</p>
+
+<p>The uncertainty principle, originally found and formulated by Heisenberg,
+states that, the momentum and the position of a moving particle cannot be known
+simultaneously. This applies to our subject as follows:</p>
+
+<p>The frequency and time information of a signal at some certain point in the
+time-frequency plane cannot be known. In other words: We cannot know <b>what
+spectral component </b>exists at any given time <b>instant</b>. The best we can
+do is to investigate what <b>spectral components </b>exist at any given <b>interval</b>
+of time. This is a problem of resolution, and it is the main reason why
+researchers have switched to WT from STFT. STFT gives a fixed resolution at all
+times, whereas WT gives a variable resolution as follows:</p>
+
+<p>Higher frequencies are better resolved in time, and lower frequencies are
+better resolved in frequency. This means that, a certain high frequency
+component can be located better in time (with less relative error) than a low
+frequency component. On the contrary, a low frequency component can be located
+better in frequency compared to high frequency component.<br>
+Take a look at the following grid:</p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span><span class="GramE">f</span> ^</pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>|*******************************************<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>continuous </pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>|*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>wavelet transform</pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp; </span>|*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>* <span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;</span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>|*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>|*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>* </pre><pre><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;</span>--------------------------------------------&gt; <span class="GramE">time</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Interpret
+the above grid as follows: The top row shows that at<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">higher</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> frequencies we have more
+samples corresponding to smaller<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">intervals</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> of time. In other words,
+higher frequencies can be resolved<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">better</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> in time. The bottom row
+however, corresponds to low<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">frequencies</span></span><span style="font-size:10.0pt;
+font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">, and there
+are less number of points to characterize the<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">signal</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">, therefore, low
+frequencies are not resolved well in time.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre> ^frequency</pre><pre> |<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span>|</pre><pre> |</pre><pre> | *******************************************************</pre><pre> |<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span>|<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span>|<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span>| *<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>discrete time</pre><pre> |<span style="mso-spacerun:yes">&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="GramE">wavelet</span> transform</pre><pre> | *<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></pre><pre><span style="mso-spacerun:yes">&nbsp;</span>| </pre><pre><span style="mso-spacerun:yes">&nbsp;</span>| *<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</pre><pre> | *<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>*</pre><pre> |----------------------------------------------------------&gt; time</pre><pre><span style="mso-spacerun:yes">&nbsp; </span></pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">In
+discrete time case, the time resolution of the signal works the same<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">as</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> above, but now, the frequency
+information has different resolutions<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">at</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> every stage too. Note that, lower
+frequencies are better resolved in<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">frequency</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">, where as higher
+frequencies are not. Note how the spacing<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">between</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> subsequent frequency
+components increase as frequency increases.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre> </pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">Below ,</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> are some examples of
+continuous wavelet transform:<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Let's
+take a sinusoidal signal, which has two different frequency components at<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">two</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> different times:<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Note
+the low frequency portion first, and then the high frequency.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre style="text-align:
+center"><img id="_x0000_i1038" src="Part1_files/figure1_10.gif" height="369" border="0" width="481"><br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></pre><pre style="text-align:center">Figure 1.10</pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">The
+continuous wavelet transform of the above signal:<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre><pre style="text-align:
+center"><img id="_x0000_i1039" src="Part1_files/figure1_11.gif" height="410" border="0" width="496"><br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></pre><pre style="text-align:center">Figure 1.11 </pre><pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Note
+however, the frequency axis in these plots are labeled as <b><span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></b></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><b><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;">scale </span></b><span style="font-size:
+10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">.</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">
+The concept of the scale will be made <span class="GramE">more clear</span> in
+the subsequent<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">sections</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">, but it should be noted
+at this time that the scale is inverse<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">of</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> frequency. That is, high scales
+correspond to low frequencies, and<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">low</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> scales correspond to high frequencies.
+Consequently, the little<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">peak</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> in the plot corresponds
+to the high frequency components in the<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">signal</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">, and the large peak
+corresponds to low frequency components<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">(<span class="GramE">which</span> appear before the high frequency components in time)
+in the<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">signal</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">You
+might be puzzled from the frequency resolution shown in the plot,<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">since</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> it shows good frequency
+resolution at high frequencies. Note<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">however</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> that, it is the good <b><span style="mso-spacerun:yes">&nbsp;</span>scale resolution </b><span style="mso-spacerun:yes">&nbsp;</span>that looks good<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">at</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> high frequencies (low scales), and good
+scale resolution means poor<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">frequency</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> resolution and vice
+versa. <span class="GramE">More about this in Part II and III.</span><o:p></o:p></span></p>
+
+<h2 style="tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>TO BE
+CONTINUED... <o:p></o:p></span></h2>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">This
+concludes the first part of this tutorial, where I have tried to<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">give</span></span><span style="font-size:10.0pt;font-family:
+&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"> a brief overview of
+signal processing, the Fourier transform and<o:p></o:p></span></p>
+
+<p style="margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span class="GramE"><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+&quot;Courier New&quot;">the</span></span><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;"> wavelet transform.<o:p></o:p></span></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center">
+<hr align="center" size="2" width="100%">
+
+</pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre>First written: November 1994 <br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></pre><pre>Revised: July 23, 1995 <br style="mso-special-character:
+line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></pre><pre>Second Edition: June <span class="GramE">5 ,</span> 1996 <br style="mso-special-character:line-break">
+<!--[if !supportLineBreakNewLine]--><br style="mso-special-character:line-break">
+<!--[endif]--></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center">
+<hr align="center" size="2" width="100%">
+
+</pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><o:p>&nbsp;</o:p></pre><pre style="text-align:center"><i><span style="font-family:&quot;Cooper Black&quot;"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><span style="text-decoration:none;text-underline:none"><img id="_x0000_i1042" src="Part1_files/wt.htm" height="144" border="0" width="204"></span><span style="mso-bookmark:_Hlt503924471"></span><span style="mso-bookmark:_Hlt503924472"></span></a><!--[if !supportNestedAnchors]--><a name="_Hlt503924472"></a><a name="_Hlt503924471"></a><!--[endif]--></span></i></pre><pre style="text-align:center"><span style="font-size:12.0pt;mso-bidi-font-size:
+10.0pt"><a href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial.html"><i><span style="font-family:&quot;Cooper Black&quot;">Wavelet Tutorial Main Page</span></i></a></span><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:14.0pt;mso-bidi-font-size:10.0pt"><o:p></o:p></span></i></b></pre><pre><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:
+center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:
+.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:
+.5in"><i><o:p>&nbsp;</o:p></i></pre>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond">The Wavelet Tutorial is hosted by Rowan
+University, College of Engineering Web Servers<o:p></o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond"><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt" align="center"><span style="font-family:Garamond"><a href="http://engineering.rowan.edu/"><span style="text-decoration:none;text-underline:none"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:156.75pt;
+ height:106.5pt'>
+ <v:imagedata src="WTpart1_files/image003.jpg" o:title="rowanhall"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part1_files/image004.jpg" v:shapes="_x0000_i1025" height="142" border="0" width="209"><!--[endif]--></span></a><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;
+mso-fareast-font-family:&quot;Courier New&quot;;font-weight:normal"><a href="http://www.rowan.edu/"><span style="color:white;text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:203.25pt;height:102.75pt'>
+ <v:imagedata src="WTpart1_files/image005.jpg" o:title="RU Logo S-BG"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part1_files/image006.jpg" v:shapes="_x0000_i1026" height="137" border="0" width="271"><!--[endif]--></span></a></span></i><span style="font-family:Garamond"><o:p></o:p></span></h3>
+
+<pre style="margin-left:.5in"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in"><b><i><o:p>&nbsp;</o:p></i></b></pre>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">All
+Rights Reserved. This tutorial is intended for educational purposes only. Unauthorized
+copying, duplicating and publishing <span class="GramE">is</span> strictly
+prohibited. <br>
+<span style="mso-spacerun:yes">&nbsp;</span><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Robi
+Polikar <br>
+136 Rowan Hall<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Dept.
+of Electrical and Computer Engineering<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:placename w:st="on"><b><i><span style="font-size:10.0pt;
+  font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Rowan</span></i></b></st1:placename><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;"> <st1:placetype w:st="on">University</st1:placetype></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><st1:place w:st="on"><st1:city w:st="on"><b><i><span style="font-size:10.0pt;font-family:
+  &quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Glassboro</span></i></b></st1:city><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:
+ &quot;Courier New&quot;">, <st1:state w:st="on">NJ</st1:state> <st1:postalcode w:st="on">08028</st1:postalcode></span></i></b></st1:place><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><b><i><span style="font-size:10.0pt;font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;">Phone:
+(856) 256 5372<o:p></o:p></span></i></b></p>
+
+<p style="margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
+margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="mso-fareast-font-family:&quot;Courier New&quot;">E-Mail<span class="GramE">::</span><o:p></o:p></span></p>
+
+<pre style="margin-left:.5in"><i><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:230.25pt;height:47.25pt'>
+ <v:imagedata src="WTpart1_files/image007.png" o:title="e-mail2" croptop="24245f"
+  cropbottom="23487f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="Part1_files/image008.gif" v:shapes="_x0000_i1027" height="63" border="0" width="307"><!--[endif]--><o:p></o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i>
+
+<hr align="center" size="2" width="100%">
+
+</i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre><pre style="margin-left:.5in;text-align:center"><i><o:p>&nbsp;</o:p></i></pre></div>
+
+
+
+
+</o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></o:smarttagtype></body></html>

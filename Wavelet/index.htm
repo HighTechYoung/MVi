@@ -1,0 +1,1737 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:b="urn:schemas-microsoft-com:office:publisher" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://users.rowan.edu/%7Epolikar/WAVELETS/WTtutorial_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title> INDEX TO SERIES OF TUTORIALS TO WAVELET TRANSFORM BY ROBI POLIKAR </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>College of Engineering</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Robi Polikar</o:LastAuthor>
+  <o:Revision>11</o:Revision>
+  <o:TotalTime>61</o:TotalTime>
+  <o:Created>2006-11-30T23:42:00Z</o:Created>
+  <o:LastSaved>2007-04-23T20:31:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>467</o:Words>
+  <o:Characters>2664</o:Characters>
+  <o:Company>Rowan University</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3125</o:CharactersWithSpaces>
+  <o:Version>11.8122</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotOptimizeForBrowser/>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Copperplate Gothic Bold";
+	panose-1:2 14 7 5 2 2 6 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	color:white;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:white;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:white;}
+h5
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:white;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#000FFF;
+	text-decoration:underline;
+	text-underline:single;}
+p.Webbody, li.Webbody, div.Webbody
+	{mso-style-name:"\[Web body\]";
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:white;
+	mso-font-kerning:15.0pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1414426159;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1984143340 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<link rel="shortcut icon" href="http://users.rowan.edu/%7Epolikar/WAVELETS/favicon.ico">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body style="tab-interval:.5in" background="index_files/bg_darkblue2.gif" bgcolor="white" lang="EN-US" link="yellow" vlink="#000FFF">
+
+<div class="Section1">
+
+<h3 style="text-align:center" align="center">THE ENGINEER'S ULTIMATE GUIDE TO <br>
+WAVELET ANALYSIS </h3>
+
+<h1 style="text-align:center" align="center"><span style="font-variant:small-caps">The
+Wavelet Tutorial<o:p></o:p></span></h1>
+
+<p class="MsoNormal" style="text-align:center" align="center"><!--[if gte vml 1]><v:group
+ id="_x0000_s1035" href="http://users.rowan.edu/~polikar/RESEARCH/SPPRL"
+ style='position:absolute;left:0;text-align:left;margin-left:259.65pt;
+ margin-top:24.6pt;width:126pt;height:93.75pt;z-index:2' coordorigin="25488900,17545050"
+ coordsize="1600415,1190556" o:button="t">
+ <v:rect id="_x0000_s1036"
+  href="http://engineering.rowan.edu/~polikar/RESEARCH/SPPRL" style='position:absolute;
+  left:25488900;top:17545050;width:1600200;height:1143000;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' o:button="t"
+  fillcolor="#fc0303" stroked="f" strokeweight="0" insetpen="t">
+  <v:stroke>
+   <o:left v:ext="view" color="white"/>
+   <o:top v:ext="view" color="white"/>
+   <o:right v:ext="view" color="white"/>
+   <o:bottom v:ext="view" color="white"/>
+   <o:column v:ext="view" color="white"/>
+  </v:stroke>
+  <v:shadow color="#ff6"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:group id="_x0000_s1037" style='position:absolute;left:25488900;
+  top:17545050;width:1600415;height:1190556' coordorigin="25488900,17545050"
+  coordsize="1600415,1190556">
+  <v:rect id="_x0000_s1038"
+   href="http://engineering.rowan.edu/~polikar/RESEARCH/SPPRLl" style='position:absolute;
+   left:25488900;top:17817786;width:970720;height:905427;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' o:button="t"
+   fillcolor="red" strokecolor="#00000f" strokeweight="2pt" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:rect><v:shapetype id="_x0000_t4" coordsize="21600,21600" o:spt="4"
+   path="m10800,l,10800,10800,21600,21600,10800xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect" textboxrect="5400,5400,16200,16200"/>
+  </v:shapetype><v:shape id="_x0000_s1039" type="#_x0000_t4" style='position:absolute;
+   left:26157423;top:17829204;width:143867;height:134188;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="yellow"
+   strokecolor="#000057" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1040" type="#_x0000_t4" style='position:absolute;
+   left:26310005;top:17686884;width:143864;height:134186;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1041" type="#_x0000_t4" style='position:absolute;
+   left:26473878;top:17545050;width:143868;height:134184;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1042" type="#_x0000_t4" style='position:absolute;
+   left:26310005;top:17981013;width:143864;height:134185;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="yellow"
+   strokecolor="#000057" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1043" type="#_x0000_t4" style='position:absolute;
+   left:26146707;top:18130747;width:143867;height:134187;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="yellow"
+   strokecolor="#000057" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1044" type="#_x0000_t4" style='position:absolute;
+   left:26473878;top:17829204;width:143868;height:134188;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1045" type="#_x0000_t4" style='position:absolute;
+   left:26634850;top:17686884;width:143867;height:134186;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1046" type="#_x0000_t4" style='position:absolute;
+   left:26473881;top:18130745;width:143863;height:134190;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1047" type="#_x0000_t4" style='position:absolute;
+   left:26313153;top:18285259;width:143867;height:134190;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="yellow"
+   strokecolor="#000057" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1048" type="#_x0000_t4" style='position:absolute;
+   left:26634851;top:17989147;width:143865;height:134187;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1049" type="#_x0000_t4" style='position:absolute;
+   left:26779081;top:17829204;width:143863;height:134188;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1050" type="#_x0000_t4" style='position:absolute;
+   left:26634852;top:18273784;width:143863;height:134191;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1051" type="#_x0000_t4" style='position:absolute;
+   left:26473881;top:18429902;width:143863;height:134185;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1052" type="#_x0000_t4" style='position:absolute;
+   left:26802087;top:18130745;width:143864;height:134190;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shape id="_x0000_s1053" type="#_x0000_t4" style='position:absolute;
+   left:26945452;top:17981013;width:143863;height:134185;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#000057"
+   strokecolor="#6f9" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+   path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s1054" type="#_x0000_t202" style='position:absolute;
+   left:25766488;top:18098444;width:201258;height:201103;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1054;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span style='mso-default-font-family:
+      "Copperplate Gothic Bold";mso-latin-font-family:"Copperplate Gothic Bold";
+      mso-latinext-font-family:"Copperplate Gothic Bold"'><span lang=EN
+      style='font-size:12.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'>&amp;</span><span style='font-size:20.0pt;font-family:"Copperplate Gothic Bold"'><o:p></o:p></span></p>
+      </span></div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:group id="_x0000_s1055" style='position:absolute;left:25511935;
+   top:17825234;width:930437;height:892856' coordorigin="25511935,17825234"
+   coordsize="930437,892856">
+   <v:line id="_x0000_s1056" style='position:absolute;mso-wrap-distance-left:2.88pt;
+    mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+    mso-wrap-distance-bottom:2.88pt' from="25511935,18559330" to="25524891,18578627"
+    fillcolor="black" strokecolor="#0b37bc" strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1057" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25523712,18576216"
+    to="25539019,18584055" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1058" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25537455,18567825"
+    to="25549671,18581846" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1059" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25549029,18547878"
+    to="25566110,18570337" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1060" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25565515,18536562"
+    to="25575524,18551339" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1061" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25576702,18536562"
+    to="25589657,18536562" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1062" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25590834,18535508"
+    to="25627338,18591894" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1063" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25624984,18578627"
+    to="25642647,18591894" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1064" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25641469,18525556"
+    to="25672087,18578627" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1065" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25669732,18527970"
+    to="25684118,18532053" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1066" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25684010,18531287"
+    to="25722721,18603051" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1067" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25723900,18601997"
+    to="25728317,18601997" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1068" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25729347,18559252"
+    to="25744394,18601997" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1069" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25744802,18506258"
+    to="25765409,18562947" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1070" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25766440,18507464"
+    to="25781896,18514399" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1071" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25780866,18514399"
+    to="25809717,18619938" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1072" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25808686,18612401"
+    to="25816929,18629286" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1073" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25818107,18616773"
+    to="25825172,18629286" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1074" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25824436,18573579"
+    to="25835191,18619257" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1075" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25835770,18495403"
+    to="25852257,18576216" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1076" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25852615,18472485"
+    to="25860205,18495127" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1077" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25861237,18469016"
+    to="25868743,18473693" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1078" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25871098,18467962"
+    to="25880814,18491784" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1079" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25880814,18490579"
+    to="25905247,18706480" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1080" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25904667,18699359"
+    to="25915240,18718001" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1081" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25913785,18696831"
+    to="25924088,18718090" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1082" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25921734,18521939"
+    to="25937041,18702259" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1083" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25937041,18221604"
+    to="25949997,18524351" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1084" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25948819,18050333"
+    to="25959124,18225224" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1085" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25958092,17883883"
+    to="25970015,18053950" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1086" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25970015,17838047"
+    to="25976299,17887500" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1087" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25975609,17825234"
+    to="25980761,17845285" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1088" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25982967,17827344"
+    to="25987680,17846492" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1089" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25986503,17841065"
+    to="25993124,17885089" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1090" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="25992346,17879588"
+    to="26002987,18059528" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1091" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26002987,18056363"
+    to="26012703,18285532" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1092" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26011672,18283271"
+    to="26017118,18371168" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1093" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26017118,18368757"
+    to="26029190,18601997" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1094" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26028849,18600941"
+    to="26033410,18644966" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1095" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26032427,18641348"
+    to="26043614,18705426" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1096" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26042054,18699538"
+    to="26053624,18717033" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1097" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26051268,18695625"
+    to="26059070,18717033" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1098" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26056715,18511988"
+    to="26079531,18697736" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1099" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26079677,18491784"
+    to="26084239,18511083" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1100" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26085417,18474900"
+    to="26089982,18491784" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1101" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26089982,18471278"
+    to="26107499,18476106" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1102" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26105437,18476106"
+    to="26132522,18609988" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1103" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26132522,18608781"
+    to="26144592,18625669" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1104" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26142531,18613605"
+    to="26154895,18623256" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1105" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26154748,18572597"
+    to="26164465,18614511" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1106" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26163584,18513343"
+    to="26183158,18576562" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1107" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26180803,18506258"
+    to="26198466,18516510" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1108" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26196112,18507464"
+    to="26213775,18547119" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1109" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26212597,18543650"
+    to="26234971,18601997" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1110" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26232616,18591894"
+    to="26246747,18599886" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1111" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26247927,18534452"
+    to="26273390,18591894" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1112" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26272358,18525556"
+    to="26284428,18537620" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1113" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26282075,18525556"
+    to="26296465,18537328" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1114" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26297385,18536562"
+    to="26324909,18588278" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1115" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26324909,18582998"
+    to="26341395,18587223" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1116" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26339334,18534452"
+    to="26374368,18585111" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1117" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26374368,18537620"
+    to="26390854,18538824" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1118" style='position:absolute;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26385702,18538824"
+    to="26429272,18585111" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line><v:line id="_x0000_s1119" style='position:absolute;flip:x;
+    mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+    mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="26431626,18572597"
+    to="26442372,18581944" fillcolor="black" strokecolor="#0b37bc"
+    strokeweight="2pt">
+    <v:stroke>
+     <o:left v:ext="view" color="white"/>
+     <o:top v:ext="view" color="white"/>
+     <o:right v:ext="view" color="white"/>
+     <o:bottom v:ext="view" color="white"/>
+     <o:column v:ext="view" color="white"/>
+    </v:stroke>
+    <v:shadow color="#ff6"/>
+   </v:line></v:group><v:shape id="_x0000_s1120" type="#_x0000_t202" style='position:absolute;
+   left:25500639;top:17778571;width:278818;height:300077;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1120;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span lang=EN
+      style='font-size:22.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+      mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+      "Copperplate Gothic Bold"'>S</span></span><span lang=EN style='font-size:
+      20.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:EN'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1121" type="#_x0000_t202" style='position:absolute;
+   left:25660352;top:17923924;width:278818;height:298165;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1121;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span lang=EN
+      style='font-size:22.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+      mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+      "Copperplate Gothic Bold"'>P</span></span><span lang=EN style='font-size:
+      20.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:EN'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1122" type="#_x0000_t202" style='position:absolute;
+   left:25869562;top:18163948;width:278818;height:301033;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1122;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span lang=EN
+      style='font-size:22.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+      mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+      "Copperplate Gothic Bold"'>P</span></span><span lang=EN style='font-size:
+      20.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:EN'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1123" type="#_x0000_t202" style='position:absolute;
+   left:25970595;top:18299738;width:278818;height:300077;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1123;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span lang=EN
+      style='font-size:22.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+      mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+      "Copperplate Gothic Bold"'>R</span></span><span lang=EN style='font-size:
+      20.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:EN'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1124" type="#_x0000_t202" style='position:absolute;
+   left:26191542;top:18435529;width:278818;height:300077;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+   stroked="f" strokecolor="white" strokeweight="0" insetpen="t">
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white" weight="0"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox style='mso-next-textbox:#_x0000_s1124;mso-column-margin:5.7pt;
+    mso-rotate-with-shape:t' inset="2.85pt,2.85pt,2.85pt,2.85pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=Webbody style='mso-pagination:none'><span lang=EN
+      style='font-size:22.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:
+      EN'><span style='mso-default-font-family:"Copperplate Gothic Bold";
+      mso-latin-font-family:"Copperplate Gothic Bold";mso-latinext-font-family:
+      "Copperplate Gothic Bold"'>L</span></span><span lang=EN style='font-size:
+      20.0pt;font-family:"Copperplate Gothic Bold";mso-ansi-language:EN'><o:p></o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1125" type="#_x0000_t4" style='position:absolute;
+   left:25985947;top:17981013;width:143866;height:134185;
+   mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+   mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="yellow"
+   strokecolor="#000057" strokeweight="1pt" insetpen="t">
+   <v:fill color2="silver"/>
+   <v:stroke>
+    <o:left v:ext="view" color="white"/>
+    <o:top v:ext="view" color="white"/>
+    <o:right v:ext="view" color="white"/>
+    <o:bottom v:ext="view" color="white"/>
+    <o:column v:ext="view" color="white"/>
+   </v:stroke>
+   <v:shadow color="#ff6"/>
+   <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  </v:shape></v:group></v:group><![endif]--><!--[if !vml]--><span style="mso-ignore:
+vglayout;position:absolute;z-index:2;left:0px;margin-left:345px;margin-top:
+31px;width:171px;height:129px"><map name="MicrosoftOfficeMap0"><area shape="Polygon" coords="61, 48, 53, 55, 61, 62, 68, 55, 61, 48" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="75, 95, 104, 127" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="52, 81, 81, 113" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="41, 67, 70, 98" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="19, 42, 48, 73" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="2, 26, 32, 58" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="102, 111, 101, 112, 99, 110, 100, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="96, 105, 101, 110, 99, 112, 94, 107" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="94, 105, 96, 107" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="95, 106, 92, 112, 89, 110, 93, 105" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="91, 112, 89, 112, 89, 110, 90, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="87, 105, 90, 111, 88, 112, 85, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="85, 104, 87, 105, 85, 107, 84, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="86, 106, 84, 107, 82, 105, 84, 104" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="85, 106, 82, 112, 80, 111, 82, 105" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="81, 113, 80, 114, 79, 111, 80, 111" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="78, 106, 81, 112, 78, 113, 76, 107" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="77, 102, 78, 106, 76, 108, 74, 103" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="76, 104, 74, 105, 73, 103, 75, 102" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="75, 104, 73, 110, 71, 110, 73, 103" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="73, 110, 72, 114, 70, 114, 71, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="72, 115, 71, 116, 69, 114, 70, 113" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="70, 113, 71, 114, 69, 116, 68, 114" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="67, 99, 70, 113, 67, 114, 65, 100" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="65, 98, 66, 98, 66, 101, 64, 100" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="66, 100, 65, 102, 63, 101, 63, 99" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="65, 102, 64, 104, 62, 103, 62, 101" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="65, 103, 62, 123, 59, 123, 62, 103" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="62, 123, 61, 125, 59, 124, 60, 122" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="60, 122, 62, 124, 59, 126, 58, 124" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="60, 117, 61, 123, 58, 124, 57, 117" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="59, 113, 60, 117, 57, 117, 57, 113" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="58, 88, 59, 113, 57, 113, 55, 88" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="57, 79, 58, 88, 55, 89, 55, 79" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="56, 55, 57, 79, 55, 80, 54, 56" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="55, 37, 56, 56, 54, 56, 53, 37" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="55, 33, 55, 37, 53, 38, 52, 33" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="54, 31, 55, 33, 52, 34, 52, 32" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="54, 32, 54, 34, 51, 33, 52, 31" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="54, 33, 53, 38, 50, 38, 51, 32" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="53, 37, 52, 55, 49, 55, 50, 37" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="52, 55, 51, 73, 48, 73, 49, 55" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="51, 73, 50, 105, 47, 105, 48, 73" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="50, 104, 48, 123, 45, 123, 47, 104" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="48, 123, 47, 126, 45, 124, 46, 122" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="46, 122, 47, 124, 45, 126, 44, 124" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="44, 101, 46, 124, 44, 124, 41, 101" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="43, 98, 44, 101, 41, 102, 40, 99" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="42, 100, 41, 100, 40, 98, 40, 98" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="41, 100, 41, 102, 38, 101, 39, 99" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="41, 102, 39, 110, 36, 110, 38, 101" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="39, 110, 38, 115, 35, 114, 36, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="38, 115, 37, 116, 35, 115, 35, 114" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="36, 113, 37, 115, 34, 116, 34, 114" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="33, 103, 36, 114, 34, 115, 31, 104" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="31, 102, 32, 102, 31, 105, 30, 104" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="31, 103, 29, 109, 27, 108, 29, 102" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="29, 109, 28, 113, 25, 112, 27, 108" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="26, 111, 26, 114" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="23, 105, 27, 112, 25, 114, 20, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="20, 104, 22, 104, 21, 107, 20, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="22, 105, 18, 111, 16, 110, 19, 104" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="18, 111, 16, 113, 15, 111, 17, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="13, 105, 17, 111, 15, 112, 11, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="10, 105, 12, 107" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="11, 107, 10, 108, 8, 107, 9, 105" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="10, 108, 9, 110, 6, 109, 8, 106" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="9, 110, 7, 111, 5, 110, 7, 108" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="5, 109, 7, 110, 6, 112, 4, 111" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="5, 108, 6, 110, 4, 111, 2, 109" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="30, 60, 51, 81" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="162, 48, 154, 55, 162, 62, 169, 55, 162, 48" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="147, 63, 139, 70, 147, 77, 154, 70, 147, 63" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="112, 95, 105, 102, 112, 109, 120, 102, 112, 95" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="129, 78, 121, 85, 129, 92, 137, 85, 129, 78" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="144, 32, 137, 39, 144, 46, 152, 39, 144, 32" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="129, 48, 121, 55, 129, 63, 137, 55, 129, 48" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="95, 80, 88, 87, 95, 94, 103, 87, 95, 80" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="112, 63, 105, 70, 112, 77, 120, 70, 112, 63" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="129, 17, 121, 24, 129, 31, 137, 24, 129, 17" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="112, 32, 105, 39, 112, 46, 120, 39, 112, 32" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="78, 63, 70, 70, 78, 77, 85, 70, 78, 63" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="95, 48, 87, 55, 95, 62, 102, 55, 95, 48" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="112, 2, 105, 9, 112, 16, 120, 9, 112, 2" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="95, 17, 87, 24, 95, 31, 102, 24, 95, 17" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Polygon" coords="79, 32, 71, 39, 79, 46, 86, 39, 79, 32" href="http://users.rowan.edu/%7Epolikar/RESEARCH/SPPRL"><area shape="Rect" coords="0, 29, 104, 127" href="http://engineering.rowan.edu/%7Epolikar/RESEARCH/SPPRLl"><area shape="Rect" coords="1, 2, 169, 122" href="http://engineering.rowan.edu/%7Epolikar/RESEARCH/SPPRL"></map><img src="index_files/image001.gif" usemap="#MicrosoftOfficeMap0" v:shapes="_x0000_s1035 _x0000_s1036 _x0000_s1037 _x0000_s1038 _x0000_s1039 _x0000_s1040 _x0000_s1041 _x0000_s1042 _x0000_s1043 _x0000_s1044 _x0000_s1045 _x0000_s1046 _x0000_s1047 _x0000_s1048 _x0000_s1049 _x0000_s1050 _x0000_s1051 _x0000_s1052 _x0000_s1053 _x0000_s1054 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1059 _x0000_s1060 _x0000_s1061 _x0000_s1062 _x0000_s1063 _x0000_s1064 _x0000_s1065 _x0000_s1066 _x0000_s1067 _x0000_s1068 _x0000_s1069 _x0000_s1070 _x0000_s1071 _x0000_s1072 _x0000_s1073 _x0000_s1074 _x0000_s1075 _x0000_s1076 _x0000_s1077 _x0000_s1078 _x0000_s1079 _x0000_s1080 _x0000_s1081 _x0000_s1082 _x0000_s1083 _x0000_s1084 _x0000_s1085 _x0000_s1086 _x0000_s1087 _x0000_s1088 _x0000_s1089 _x0000_s1090 _x0000_s1091 _x0000_s1092 _x0000_s1093 _x0000_s1094 _x0000_s1095 _x0000_s1096 _x0000_s1097 _x0000_s1098 _x0000_s1099 _x0000_s1100 _x0000_s1101 _x0000_s1102 _x0000_s1103 _x0000_s1104 _x0000_s1105 _x0000_s1106 _x0000_s1107 _x0000_s1108 _x0000_s1109 _x0000_s1110 _x0000_s1111 _x0000_s1112 _x0000_s1113 _x0000_s1114 _x0000_s1115 _x0000_s1116 _x0000_s1117 _x0000_s1118 _x0000_s1119 _x0000_s1120 _x0000_s1121 _x0000_s1122 _x0000_s1123 _x0000_s1124 _x0000_s1125" height="129" border="0" width="171"></span><!--[endif]--><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1034" type="#_x0000_t75"
+ href="http://users.rowan.edu/~polikar/RESEARCH/PUBLICATIONS/csm06.pdf"
+ style='position:absolute;left:0;text-align:left;margin-left:621.3pt;
+ margin-top:24.15pt;width:101.5pt;height:84.5pt;z-index:1' o:button="t">
+ <v:fill o:detectmouseclick="t"/>
+ <v:imagedata src="WTtutorial_files/image002.png" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout;position:
+absolute;z-index:1;left:0px;margin-left:829px;margin-top:32px;width:135px;
+height:113px"><a href="http://users.rowan.edu/%7Epolikar/RESEARCH/PUBLICATIONS/csm06.pdf"><img src="index_files/image003.gif" v:shapes="_x0000_s1034" height="113" border="0" width="135"></a></span><!--[endif]--><img id="_x0000_i1030" src="index_files/colorbar.htm" height="7" border="0" width="622"><br>
+<span class="GramE">by</span> </p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><br>
+<b style="mso-bidi-font-weight:normal"><a href="http://users.rowan.edu/%7Epolikar/">ROBI POLIKAR</a><o:p></o:p></b></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><a href="http://engineering.eng.rowan.edu/%7Epolikar/RESEARCH/SPPRL">Also visit
+Rowan’s Signal Processing and Pattern Recognition Laboratory pages </a><br>
+Two new tutorials: <a href="http://users.rowan.edu/%7Epolikar/RESEARCH/PUBLICATIONS/wiley06.pdf">Pattern
+Recognition</a> &amp; <a href="http://users.rowan.edu/%7Epolikar/RESEARCH/PUBLICATIONS/csm06.pdf">Ensemble
+Based Systems in Decision Making</a></p>
+
+<p class="MsoNormal" style="text-align:center" align="center"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt;text-align:center" align="center"><img id="_x0000_i1031" src="index_files/waveletrp1.gif" height="380" border="0" width="484"></p>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTpreface.html">PREFACE </a></h3>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTpart1.html">PART I: </a><br>
+OVERVIEW: WHY WAVELET <span class="GramE">TRANSFORM</span>?</h3>
+
+<h2 style="text-align:center" align="center"><span style="font-size:13.0pt;
+mso-bidi-font-size:18.0pt">NEW! – Thanks to </span><span class="MsoPageNumber"><i style="mso-bidi-font-style:normal"><span style="font-size:13.0pt;mso-bidi-font-size:18.0pt;mso-ansi-language:FR" lang="FR">Noël
+K. MAMALET</span></i></span><span class="MsoPageNumber"><span style="font-size:13.0pt;mso-bidi-font-size:18.0pt;mso-ansi-language:FR;
+font-weight:normal;mso-bidi-font-weight:bold" lang="FR">,</span></span><span class="MsoPageNumber"><span style="font-size:13.0pt;mso-bidi-font-size:
+18.0pt;mso-ansi-language:FR" lang="FR"> <a href="http://lycee-ledantec.ac-rennes.fr/upload/PO/Ondelettes/POLIKAR%201.htm"><span class="SpellE">this</span> tutorial <span class="SpellE">is</span> <span class="SpellE">now</span> <span class="SpellE">available</span> in French</a></span></span><span style="font-size:13.0pt;mso-bidi-font-size:18.0pt"><o:p></o:p></span></h2>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTpart2.html">PART II: </a><br>
+FUNDAMENTALS: THE FOURIER TRANSFORM AND <br>
+THE SHORT TERM FOURIER TRANSFORM, <br>
+RESOLUTION PROBLEMS </h3>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTpart3.html">PART III: </a><br>
+MULTIRESOLUTION ANALYSIS: <br>
+THE CONTINUOUS WAVELET TRANSFORM </h3>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTpart4.html">PART IV: </a><br>
+MULTIRESOLUTION ANALYSIS: <br>
+THE DISCRETE WAVELET TRANSFORM <br>
+<blink><span style="mso-spacerun:yes">&nbsp;</span></blink></h3>
+
+<h3 style="text-align:center" align="center"><a href="http://engineering.rowan.edu/%7epolikar/WAVELETS/WTacknowledment.html">ACKNOWLEDGMENTS
+</a></h3>
+
+<h3><span style="font-size:11.0pt;color:red">Please note:</span><span style="font-size:11.0pt;font-weight:normal;mso-bidi-font-weight:bold"> <br>
+Due to large number of e-mails I receive, I am not able to reply to all of
+them. I will therefore use the following criteria in answering the questions:<o:p></o:p></span></h3>
+
+<h3 style="margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in"><!--[if !supportLists]--><span style="font-size:11.0pt;
+font-weight:normal;mso-bidi-font-weight:bold"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="font-size:11.0pt;font-weight:normal;mso-bidi-font-weight:bold">The
+answer to the question does not already appear in the tutorial; 2. I actually
+know the answer to the question asked.<o:p></o:p></span></h3>
+
+<h3><span style="font-size:11.0pt;font-weight:normal;mso-bidi-font-weight:bold">If
+you do not receive a reply from me, then the answer is already in the tutorial,
+or I simply do not know the answer. My apologies for the inconvenience this may
+cause. I appreciate your understanding. <o:p></o:p></span></h3>
+
+<h3 style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</h3>
+
+<h5><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Garamond">For
+questions, comments or suggestions, please send an e-mail to <o:p></o:p></span></h5>
+
+<h5><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Garamond"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:230.25pt;height:51pt'>
+ <v:imagedata src="WTtutorial_files/image004.png" o:title="e-mail2" croptop="22350f"
+  cropbottom="23866f"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="index_files/image005.gif" v:shapes="_x0000_i1025" height="68" border="0" width="307"><!--[endif]--><o:p></o:p></span></h5>
+
+<h3 style="text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</h3>
+
+<h3 style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:center" align="center"><span class="MsoHyperlink"><i><span style="font-variant:small-caps;text-decoration:
+none;text-underline:none"><a href="http://engineering.rowan.edu/%7Epolikar"><span style="text-decoration:none;text-underline:none"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:63.75pt;height:47.25pt'>
+ <v:imagedata src="WTtutorial_files/image006.emz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img src="index_files/image007.gif" v:shapes="_x0000_i1026" height="63" border="0" width="85"><!--[endif]--></span></a><o:p></o:p></span></i></span></h3>
+
+<h3 style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:center" align="center"><a href="http://users.rowan.edu/%7Epolikar/"><i><span style="font-variant:small-caps">Robi
+Polikar <span class="SpellE">Mainpage</span></span></i></a></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</h3>
+
+<h3 style="margin-left:.5in;text-align:center" align="center"><span style="font-family:Garamond">Thank you for visiting <i>THE WAVELET TUTORIAL</i>.
+<br>
+Including your current access, this page has been visited</span> <br>
+<br>
+<script language="JavaScript" type="text/javascript">
+var sc_project=2413120; 
+var sc_invisible=0; 
+var sc_partition=22; 
+var sc_security="aad75626"; 
+</script><!-- Start of StatCounter Code --><script language="JavaScript" type="text/javascript" src="index_files/counter.js">
+</script><a href="http://www.statcounter.com/" target="_blank"><noscript><span
+style='text-decoration:none;text-underline:none'><img border=0 width=60
+height=14 id="_x0000_i1037"
+src="http://c23.statcounter.com/counter.php?sc_project=2413120&amp;java=0&amp;security=aad75626&amp;invisible=0"
+alt="web statistics"></span></a><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></noscript><!-- End of StatCounter Code --></a></h3><a href="http://www.statcounter.com/" target="_blank">
+
+<h3 style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond">times since March 07,1999.</span> </h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center">
+
+<hr align="center" size="2" width="100%">
+
+</h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond">The Wavelet Tutorial is hosted by Rowan
+University, College of Engineering Web Servers<o:p></o:p></span></h3>
+
+</a><h3 style="margin:0in;margin-bottom:.0001pt"><a href="http://www.statcounter.com/" target="_blank"><span style="font-family:Garamond"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></a><a href="http://engineering.rowan.edu/"><span style="text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:156.75pt;height:105.75pt'>
+ <v:imagedata src="WTtutorial_files/image008.jpg" o:title="rowanhall"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="index_files/image009.jpg" v:shapes="_x0000_i1027" height="141" border="0" width="209"><!--[endif]--></span></a><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="http://www.rowan.edu/"><span style="color:white;text-decoration:none;
+text-underline:none"><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:206.25pt;height:104.25pt'>
+ <v:imagedata src="WTtutorial_files/image010.jpg" o:title="RU Logo S-BG"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="index_files/image011.jpg" v:shapes="_x0000_i1028" height="139" border="0" width="275"><!--[endif]--></span></a><o:p></o:p></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt"><span style="font-family:Garamond"><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond">The Wavelet Tutorial was originally developed and
+hosted (1994-2000) at <o:p></o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond"><a href="http://www.iastate.edu/"><span style="text-decoration:none;text-underline:none"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:176.25pt;height:32.25pt'>
+ <v:imagedata src="WTtutorial_files/image012.gif" o:title="isu"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="index_files/image013.jpg" v:shapes="_x0000_i1029" height="43" border="0" width="235"><!--[endif]--></span></a><o:p></o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond"><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style="margin:0in;margin-bottom:.0001pt;text-align:center" align="center"><span style="font-family:Garamond">Last major update: January 12, 2001.<o:p></o:p></span></h3>
+
+</div>
+
+
+
+
+</body></html>
